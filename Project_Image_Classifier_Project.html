@@ -13120,7 +13120,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># The new version of dataset is only available in the tfds-nightly package.</span>
@@ -13142,31 +13142,26 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Collecting tfds-nightly
-  Downloading https://files.pythonhosted.org/packages/9c/e5/20d23511f1e1d3270a896ac7eefbb13842214fb4b55889f7212079ef2312/tfds_nightly-3.1.0.dev202005200105-py3-none-any.whl (3.3MB)
-     |████████████████████████████████| 3.3MB 3.5MB/s eta 0:00:01
-Requirement already satisfied: six in /opt/conda/lib/python3.7/site-packages (from tfds-nightly) (1.12.0)
+<pre>Requirement already satisfied: tfds-nightly in /root/.local/lib/python3.7/site-packages (3.1.0.dev202005200105)
+Requirement already satisfied: tqdm in /opt/conda/lib/python3.7/site-packages (from tfds-nightly) (4.36.1)
+Requirement already satisfied: numpy in /opt/conda/lib/python3.7/site-packages (from tfds-nightly) (1.17.4)
 Requirement already satisfied: termcolor in /opt/conda/lib/python3.7/site-packages (from tfds-nightly) (1.1.0)
 Requirement already satisfied: promise in /opt/conda/lib/python3.7/site-packages (from tfds-nightly) (2.2.1)
 Requirement already satisfied: future in /opt/conda/lib/python3.7/site-packages (from tfds-nightly) (0.18.2)
-Requirement already satisfied: requests&gt;=2.19.0 in /opt/conda/lib/python3.7/site-packages (from tfds-nightly) (2.22.0)
-Requirement already satisfied: tqdm in /opt/conda/lib/python3.7/site-packages (from tfds-nightly) (4.36.1)
-Requirement already satisfied: dill in /opt/conda/lib/python3.7/site-packages (from tfds-nightly) (0.3.1.1)
-Requirement already satisfied: numpy in /opt/conda/lib/python3.7/site-packages (from tfds-nightly) (1.17.4)
-Requirement already satisfied: protobuf&gt;=3.6.1 in /opt/conda/lib/python3.7/site-packages (from tfds-nightly) (3.11.2)
-Requirement already satisfied: attrs&gt;=18.1.0 in /opt/conda/lib/python3.7/site-packages (from tfds-nightly) (19.3.0)
-Requirement already satisfied: absl-py in /opt/conda/lib/python3.7/site-packages (from tfds-nightly) (0.8.1)
-Collecting tensorflow-metadata&lt;0.16,&gt;=0.15
-  Downloading https://files.pythonhosted.org/packages/3b/0c/afb81ea6998f6e26521671585d1cd9d3f7945a8b9834764e91757453dc25/tensorflow_metadata-0.15.2-py2.py3-none-any.whl
 Requirement already satisfied: wrapt in /opt/conda/lib/python3.7/site-packages (from tfds-nightly) (1.11.2)
-Requirement already satisfied: certifi&gt;=2017.4.17 in /opt/conda/lib/python3.7/site-packages (from requests&gt;=2.19.0-&gt;tfds-nightly) (2019.11.28)
+Requirement already satisfied: six in /opt/conda/lib/python3.7/site-packages (from tfds-nightly) (1.12.0)
+Requirement already satisfied: attrs&gt;=18.1.0 in /opt/conda/lib/python3.7/site-packages (from tfds-nightly) (19.3.0)
+Requirement already satisfied: requests&gt;=2.19.0 in /opt/conda/lib/python3.7/site-packages (from tfds-nightly) (2.22.0)
+Requirement already satisfied: tensorflow-metadata&lt;0.16,&gt;=0.15 in /root/.local/lib/python3.7/site-packages (from tfds-nightly) (0.15.2)
+Requirement already satisfied: dill in /opt/conda/lib/python3.7/site-packages (from tfds-nightly) (0.3.1.1)
+Requirement already satisfied: absl-py in /opt/conda/lib/python3.7/site-packages (from tfds-nightly) (0.8.1)
+Requirement already satisfied: protobuf&gt;=3.6.1 in /opt/conda/lib/python3.7/site-packages (from tfds-nightly) (3.11.2)
+Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,&lt;1.26,&gt;=1.21.1 in /opt/conda/lib/python3.7/site-packages (from requests&gt;=2.19.0-&gt;tfds-nightly) (1.24.2)
 Requirement already satisfied: chardet&lt;3.1.0,&gt;=3.0.2 in /opt/conda/lib/python3.7/site-packages (from requests&gt;=2.19.0-&gt;tfds-nightly) (3.0.4)
 Requirement already satisfied: idna&lt;2.9,&gt;=2.5 in /opt/conda/lib/python3.7/site-packages (from requests&gt;=2.19.0-&gt;tfds-nightly) (2.8)
-Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,&lt;1.26,&gt;=1.21.1 in /opt/conda/lib/python3.7/site-packages (from requests&gt;=2.19.0-&gt;tfds-nightly) (1.24.2)
-Requirement already satisfied: setuptools in /opt/conda/lib/python3.7/site-packages (from protobuf&gt;=3.6.1-&gt;tfds-nightly) (41.4.0)
+Requirement already satisfied: certifi&gt;=2017.4.17 in /opt/conda/lib/python3.7/site-packages (from requests&gt;=2.19.0-&gt;tfds-nightly) (2019.11.28)
 Requirement already satisfied: googleapis-common-protos in /opt/conda/lib/python3.7/site-packages (from tensorflow-metadata&lt;0.16,&gt;=0.15-&gt;tfds-nightly) (1.6.0)
-Installing collected packages: tensorflow-metadata, tfds-nightly
-Successfully installed tensorflow-metadata-0.15.2 tfds-nightly-3.1.0.dev202005200105
+Requirement already satisfied: setuptools in /opt/conda/lib/python3.7/site-packages (from protobuf&gt;=3.6.1-&gt;tfds-nightly) (41.4.0)
 Note: you may need to restart the kernel to use updated packages.
 </pre>
 </div>
@@ -13327,25 +13322,25 @@ Note: you may need to restart the kernel to use updated packages.
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>I0520 18:53:00.849173 140301184534272 download_and_prepare.py:201] Running download_and_prepare for dataset(s):
+<pre>I0520 21:11:43.798535 140516801754880 download_and_prepare.py:201] Running download_and_prepare for dataset(s):
 oxford_flowers102
-I0520 18:53:00.910803 140301184534272 dataset_info.py:427] Load pre-computed DatasetInfo (eg: splits, num examples,...) from GCS: oxford_flowers102/2.1.1
-I0520 18:53:00.984440 140301184534272 dataset_info.py:358] Load dataset info from /tmp/tmp_8xlx4v9tfds
-I0520 18:53:00.995970 140301184534272 download_and_prepare.py:139] download_and_prepare for dataset oxford_flowers102/2.1.1...
-I0520 18:53:00.996349 140301184534272 dataset_builder.py:345] Generating dataset oxford_flowers102 (/root/tensorflow_datasets/oxford_flowers102/2.1.1)
+I0520 21:11:43.866335 140516801754880 dataset_info.py:427] Load pre-computed DatasetInfo (eg: splits, num examples,...) from GCS: oxford_flowers102/2.1.1
+I0520 21:11:43.926119 140516801754880 dataset_info.py:358] Load dataset info from /tmp/tmpzd0yq0oatfds
+I0520 21:11:43.937797 140516801754880 download_and_prepare.py:139] download_and_prepare for dataset oxford_flowers102/2.1.1...
+I0520 21:11:43.938195 140516801754880 dataset_builder.py:345] Generating dataset oxford_flowers102 (/root/tensorflow_datasets/oxford_flowers102/2.1.1)
 <span class="ansi-bold">Downloading and preparing dataset oxford_flowers102/2.1.1 (download: 328.90 MiB, generated: 331.34 MiB, total: 660.25 MiB) to /root/tensorflow_datasets/oxford_flowers102/2.1.1...</span>
 Dl Completed...: 0 url [00:00, ? url/s]
 Dl Size...: 0 MiB [00:00, ? MiB/s]
 
-Extraction completed...: 0 file [00:00, ? file/s]I0520 18:53:01.102916 140301184534272 download_manager.py:477] Downloading https://www.robots.ox.ac.uk/~vgg/data/flowers/102/102flowers.tgz into /root/tensorflow_datasets/downloads/robots.ox.ac.uk_vgg_flowers_102_102flowersoWedSp98maBn1wypsDib6T-q2NVbO40fwvTflmPmQpY.tgz.tmp.63dd039b926b48ae92c4812484ec7648...
+Extraction completed...: 0 file [00:00, ? file/s]I0520 21:11:44.053637 140516801754880 download_manager.py:477] Downloading https://www.robots.ox.ac.uk/~vgg/data/flowers/102/102flowers.tgz into /root/tensorflow_datasets/downloads/robots.ox.ac.uk_vgg_flowers_102_102flowersoWedSp98maBn1wypsDib6T-q2NVbO40fwvTflmPmQpY.tgz.tmp.4dbb3e171efb441586347cc55caa99e0...
 Dl Completed...:   0%|                                  | 0/1 [00:00&lt;?, ? url/s]
 Dl Size...: 0 MiB [00:00, ? MiB/s]
 
-Extraction completed...: 0 file [00:00, ? file/s]I0520 18:53:01.105989 140301184534272 download_manager.py:477] Downloading https://www.robots.ox.ac.uk/~vgg/data/flowers/102/imagelabels.mat into /root/tensorflow_datasets/downloads/robots.ox.ac.uk_vgg_flowers_102_imagelabelQc558tX8AD-RkJuVyV4EyAI3B3yv3pQFw82vzoHJBkI.mat.tmp.5c40afb15e974102a883eb93cf388930...
+Extraction completed...: 0 file [00:00, ? file/s]I0520 21:11:44.058055 140516801754880 download_manager.py:477] Downloading https://www.robots.ox.ac.uk/~vgg/data/flowers/102/imagelabels.mat into /root/tensorflow_datasets/downloads/robots.ox.ac.uk_vgg_flowers_102_imagelabelQc558tX8AD-RkJuVyV4EyAI3B3yv3pQFw82vzoHJBkI.mat.tmp.b9d7a728f1704a1e8e71f89b959a298e...
 Dl Completed...:   0%|                                  | 0/2 [00:00&lt;?, ? url/s]
 Dl Size...: 0 MiB [00:00, ? MiB/s]
 
-Extraction completed...: 0 file [00:00, ? file/s]I0520 18:53:01.108916 140301184534272 download_manager.py:477] Downloading https://www.robots.ox.ac.uk/~vgg/data/flowers/102/setid.mat into /root/tensorflow_datasets/downloads/robots.ox.ac.uk_vgg_flowers_102_setidSMkjURnWabtzYOtl4t1kAcvHb6vlLbDJOlQsTHUux60.mat.tmp.3752a56800b14d3abf66fa9e708d8c9f...
+Extraction completed...: 0 file [00:00, ? file/s]I0520 21:11:44.061132 140516801754880 download_manager.py:477] Downloading https://www.robots.ox.ac.uk/~vgg/data/flowers/102/setid.mat into /root/tensorflow_datasets/downloads/robots.ox.ac.uk_vgg_flowers_102_setidSMkjURnWabtzYOtl4t1kAcvHb6vlLbDJOlQsTHUux60.mat.tmp.ef0c647305f24675a693f371cb1f1395...
 Dl Completed...:   0%|                                  | 0/3 [00:00&lt;?, ? url/s]
 Dl Size...: 0 MiB [00:00, ? MiB/s]
 
@@ -13355,1138 +13350,1134 @@ Dl Size...:   0%|                                     | 0/328 [00:00&lt;?, ? MiB
 Dl Completed...:   0%|                                  | 0/3 [00:00&lt;?, ? url/s]
 Dl Size...:   0%|                                     | 0/328 [00:00&lt;?, ? MiB/s]
 
-Dl Completed...:  33%|████████▋                 | 1/3 [00:00&lt;00:00,  2.24 url/s]
+Dl Completed...:  33%|████████▋                 | 1/3 [00:00&lt;00:00,  2.25 url/s]
 Dl Size...:   0%|                                     | 0/328 [00:00&lt;?, ? MiB/s]
 
-Extraction completed...: 0 file [00:00, ? file/s]I0520 18:53:01.550716 140299502737152 download_manager.py:496] Skipping extraction for /root/tensorflow_datasets/downloads/robots.ox.ac.uk_vgg_flowers_102_imagelabelSQPpQga6wjv3cqrfBkUZFt9WtY_Eg6YtsyqXuCZWZR0.mat (method=NO_EXTRACT).
-Dl Completed...:  33%|████████▋                 | 1/3 [00:00&lt;00:00,  2.24 url/s]
+Dl Completed...:  33%|████████▋                 | 1/3 [00:00&lt;00:00,  2.25 url/s]
 Dl Size...:   0%|                                     | 0/328 [00:00&lt;?, ? MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:00&lt;00:00,  2.77 url/s]
+Extraction completed...: 0 file [00:00, ? file/s]I0520 21:11:44.500282 140515119957760 download_manager.py:496] Skipping extraction for /root/tensorflow_datasets/downloads/robots.ox.ac.uk_vgg_flowers_102_imagelabelSQPpQga6wjv3cqrfBkUZFt9WtY_Eg6YtsyqXuCZWZR0.mat (method=NO_EXTRACT).
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:00&lt;00:00,  2.92 url/s]
 Dl Size...:   0%|                                     | 0/328 [00:00&lt;?, ? MiB/s]
 
-Extraction completed...: 0 file [00:00, ? file/s]I0520 18:53:01.711132 140299494344448 download_manager.py:496] Skipping extraction for /root/tensorflow_datasets/downloads/robots.ox.ac.uk_vgg_flowers_102_setidRrhnj5H9ldPI9P6rgNJxpsg0od2Jb-Kf0-atnOXI3M0.mat (method=NO_EXTRACT).
+Extraction completed...: 0 file [00:00, ? file/s]I0520 21:11:44.601088 140515111565056 download_manager.py:496] Skipping extraction for /root/tensorflow_datasets/downloads/robots.ox.ac.uk_vgg_flowers_102_setidRrhnj5H9ldPI9P6rgNJxpsg0od2Jb-Kf0-atnOXI3M0.mat (method=NO_EXTRACT).
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:01&lt;00:00,  2.77 url/s]
-Dl Size...:   0%|                             | 1/328 [00:01&lt;05:33,  1.02s/ MiB]
-
-Extraction completed...: 0 file [00:01, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:01&lt;00:00,  2.77 url/s]
-Dl Size...:   1%|▏                            | 2/328 [00:01&lt;04:02,  1.34 MiB/s]
-
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:01&lt;00:00,  2.77 url/s]
-Dl Size...:   1%|▎                            | 3/328 [00:01&lt;04:01,  1.34 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:01&lt;00:00,  2.92 url/s]
+Dl Size...:   0%|                             | 1/328 [00:01&lt;05:30,  1.01s/ MiB]
 
 Extraction completed...: 0 file [00:01, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:01&lt;00:00,  2.77 url/s]
-Dl Size...:   1%|▎                            | 4/328 [00:01&lt;02:53,  1.86 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:01&lt;00:00,  2.92 url/s]
+Dl Size...:   1%|▏                            | 2/328 [00:01&lt;04:00,  1.35 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:01&lt;00:00,  2.77 url/s]
-Dl Size...:   2%|▍                            | 5/328 [00:01&lt;02:53,  1.86 MiB/s]
-
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:01&lt;00:00,  2.77 url/s]
-Dl Size...:   2%|▌                            | 6/328 [00:01&lt;02:52,  1.86 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:01&lt;00:00,  2.92 url/s]
+Dl Size...:   1%|▎                            | 3/328 [00:01&lt;04:00,  1.35 MiB/s]
 
 Extraction completed...: 0 file [00:01, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:01&lt;00:00,  2.77 url/s]
-Dl Size...:   2%|▌                            | 7/328 [00:01&lt;02:04,  2.59 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:01&lt;00:00,  2.92 url/s]
+Dl Size...:   1%|▎                            | 4/328 [00:01&lt;02:52,  1.87 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:01&lt;00:00,  2.77 url/s]
-Dl Size...:   2%|▋                            | 8/328 [00:01&lt;02:03,  2.59 MiB/s]
-
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:01&lt;00:00,  2.77 url/s]
-Dl Size...:   3%|▊                            | 9/328 [00:01&lt;02:03,  2.59 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:01&lt;00:00,  2.92 url/s]
+Dl Size...:   2%|▍                            | 5/328 [00:01&lt;02:52,  1.87 MiB/s]
 
 Extraction completed...: 0 file [00:01, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:01&lt;00:00,  2.77 url/s]
-Dl Size...:   3%|▊                           | 10/328 [00:01&lt;01:29,  3.56 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:01&lt;00:00,  2.92 url/s]
+Dl Size...:   2%|▌                            | 6/328 [00:01&lt;02:05,  2.57 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:01&lt;00:00,  2.77 url/s]
-Dl Size...:   3%|▉                           | 11/328 [00:01&lt;01:29,  3.56 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:01&lt;00:00,  2.92 url/s]
+Dl Size...:   2%|▌                            | 7/328 [00:01&lt;02:04,  2.57 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:01&lt;00:00,  2.77 url/s]
-Dl Size...:   4%|█                           | 12/328 [00:01&lt;01:28,  3.56 MiB/s]
-
-Extraction completed...: 0 file [00:01, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:01&lt;00:00,  2.77 url/s]
-Dl Size...:   4%|█                           | 13/328 [00:01&lt;01:05,  4.82 MiB/s]
-
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:01&lt;00:00,  2.77 url/s]
-Dl Size...:   4%|█▏                          | 14/328 [00:01&lt;01:05,  4.82 MiB/s]
-
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:01&lt;00:00,  2.77 url/s]
-Dl Size...:   5%|█▎                          | 15/328 [00:01&lt;01:04,  4.82 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:01&lt;00:00,  2.92 url/s]
+Dl Size...:   2%|▋                            | 8/328 [00:01&lt;02:04,  2.57 MiB/s]
 
 Extraction completed...: 0 file [00:01, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:01&lt;00:00,  2.77 url/s]
-Dl Size...:   5%|█▎                          | 16/328 [00:01&lt;00:48,  6.42 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:01&lt;00:00,  2.92 url/s]
+Dl Size...:   3%|▊                            | 9/328 [00:01&lt;01:32,  3.45 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:01&lt;00:00,  2.77 url/s]
-Dl Size...:   5%|█▍                          | 17/328 [00:01&lt;00:48,  6.42 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:01&lt;00:00,  2.92 url/s]
+Dl Size...:   3%|▊                           | 10/328 [00:01&lt;01:32,  3.45 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:01&lt;00:00,  2.77 url/s]
-Dl Size...:   5%|█▌                          | 18/328 [00:01&lt;00:48,  6.42 MiB/s]
-
-Extraction completed...: 0 file [00:01, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:01&lt;00:00,  2.77 url/s]
-Dl Size...:   6%|█▌                          | 19/328 [00:01&lt;00:36,  8.36 MiB/s]
-
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:01&lt;00:00,  2.77 url/s]
-Dl Size...:   6%|█▋                          | 20/328 [00:01&lt;00:36,  8.36 MiB/s]
-
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:01&lt;00:00,  2.77 url/s]
-Dl Size...:   6%|█▊                          | 21/328 [00:01&lt;00:36,  8.36 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:01&lt;00:00,  2.92 url/s]
+Dl Size...:   3%|▉                           | 11/328 [00:01&lt;01:31,  3.45 MiB/s]
 
 Extraction completed...: 0 file [00:01, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:01&lt;00:00,  2.77 url/s]
-Dl Size...:   7%|█▉                          | 22/328 [00:01&lt;00:28, 10.59 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:01&lt;00:00,  2.92 url/s]
+Dl Size...:   4%|█                           | 12/328 [00:01&lt;01:07,  4.68 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:01&lt;00:00,  2.77 url/s]
-Dl Size...:   7%|█▉                          | 23/328 [00:01&lt;00:28, 10.59 MiB/s]
-
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:01&lt;00:00,  2.77 url/s]
-Dl Size...:   7%|██                          | 24/328 [00:01&lt;00:28, 10.59 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:01&lt;00:00,  2.92 url/s]
+Dl Size...:   4%|█                           | 13/328 [00:01&lt;01:07,  4.68 MiB/s]
 
 Extraction completed...: 0 file [00:01, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:01&lt;00:00,  2.77 url/s]
-Dl Size...:   8%|██▏                         | 25/328 [00:01&lt;00:23, 13.07 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:01&lt;00:00,  2.92 url/s]
+Dl Size...:   4%|█▏                          | 14/328 [00:01&lt;00:51,  6.07 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:02&lt;00:00,  2.77 url/s]
-Dl Size...:   8%|██▏                         | 26/328 [00:02&lt;00:23, 13.07 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:01&lt;00:00,  2.92 url/s]
+Dl Size...:   5%|█▎                          | 15/328 [00:01&lt;00:51,  6.07 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:02&lt;00:00,  2.77 url/s]
-Dl Size...:   8%|██▎                         | 27/328 [00:02&lt;00:23, 13.07 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:01&lt;00:00,  2.92 url/s]
+Dl Size...:   5%|█▎                          | 16/328 [00:01&lt;00:51,  6.07 MiB/s]
 
-Extraction completed...: 0 file [00:02, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:02&lt;00:00,  2.77 url/s]
-Dl Size...:   9%|██▍                         | 28/328 [00:02&lt;00:19, 15.59 MiB/s]
+Extraction completed...: 0 file [00:01, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:01&lt;00:00,  2.92 url/s]
+Dl Size...:   5%|█▍                          | 17/328 [00:01&lt;00:41,  7.55 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:02&lt;00:00,  2.77 url/s]
-Dl Size...:   9%|██▍                         | 29/328 [00:02&lt;00:19, 15.59 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:01&lt;00:00,  2.92 url/s]
+Dl Size...:   5%|█▌                          | 18/328 [00:01&lt;00:41,  7.55 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:02&lt;00:00,  2.77 url/s]
-Dl Size...:   9%|██▌                         | 30/328 [00:02&lt;00:19, 15.59 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:01&lt;00:00,  2.92 url/s]
+Dl Size...:   6%|█▌                          | 19/328 [00:01&lt;00:40,  7.55 MiB/s]
 
-Extraction completed...: 0 file [00:02, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:02&lt;00:00,  2.77 url/s]
-Dl Size...:   9%|██▋                         | 31/328 [00:02&lt;00:16, 17.64 MiB/s]
+Extraction completed...: 0 file [00:01, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:01&lt;00:00,  2.92 url/s]
+Dl Size...:   6%|█▋                          | 20/328 [00:01&lt;00:31,  9.64 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:02&lt;00:00,  2.77 url/s]
-Dl Size...:  10%|██▋                         | 32/328 [00:02&lt;00:16, 17.64 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:02&lt;00:00,  2.92 url/s]
+Dl Size...:   6%|█▊                          | 21/328 [00:02&lt;00:31,  9.64 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:02&lt;00:00,  2.77 url/s]
-Dl Size...:  10%|██▊                         | 33/328 [00:02&lt;00:16, 17.64 MiB/s]
-
-Extraction completed...: 0 file [00:02, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:02&lt;00:00,  2.77 url/s]
-Dl Size...:  10%|██▉                         | 34/328 [00:02&lt;00:14, 20.00 MiB/s]
-
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:02&lt;00:00,  2.77 url/s]
-Dl Size...:  11%|██▉                         | 35/328 [00:02&lt;00:14, 20.00 MiB/s]
-
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:02&lt;00:00,  2.77 url/s]
-Dl Size...:  11%|███                         | 36/328 [00:02&lt;00:14, 20.00 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:02&lt;00:00,  2.92 url/s]
+Dl Size...:   7%|█▉                          | 22/328 [00:02&lt;00:31,  9.64 MiB/s]
 
 Extraction completed...: 0 file [00:02, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:02&lt;00:00,  2.77 url/s]
-Dl Size...:  11%|███▏                        | 37/328 [00:02&lt;00:13, 22.05 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:02&lt;00:00,  2.92 url/s]
+Dl Size...:   7%|█▉                          | 23/328 [00:02&lt;00:27, 11.21 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:02&lt;00:00,  2.77 url/s]
-Dl Size...:  12%|███▏                        | 38/328 [00:02&lt;00:13, 22.05 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:02&lt;00:00,  2.92 url/s]
+Dl Size...:   7%|██                          | 24/328 [00:02&lt;00:27, 11.21 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:02&lt;00:00,  2.77 url/s]
-Dl Size...:  12%|███▎                        | 39/328 [00:02&lt;00:13, 22.05 MiB/s]
-
-Extraction completed...: 0 file [00:02, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:02&lt;00:00,  2.77 url/s]
-Dl Size...:  12%|███▍                        | 40/328 [00:02&lt;00:12, 23.86 MiB/s]
-
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:02&lt;00:00,  2.77 url/s]
-Dl Size...:  12%|███▌                        | 41/328 [00:02&lt;00:12, 23.86 MiB/s]
-
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:02&lt;00:00,  2.77 url/s]
-Dl Size...:  13%|███▌                        | 42/328 [00:02&lt;00:11, 23.86 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:02&lt;00:00,  2.92 url/s]
+Dl Size...:   8%|██▏                         | 25/328 [00:02&lt;00:27, 11.21 MiB/s]
 
 Extraction completed...: 0 file [00:02, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:02&lt;00:00,  2.77 url/s]
-Dl Size...:  13%|███▋                        | 43/328 [00:02&lt;00:12, 22.90 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:02&lt;00:00,  2.92 url/s]
+Dl Size...:   8%|██▏                         | 26/328 [00:02&lt;00:22, 13.52 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:02&lt;00:00,  2.77 url/s]
-Dl Size...:  13%|███▊                        | 44/328 [00:02&lt;00:12, 22.90 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:02&lt;00:00,  2.92 url/s]
+Dl Size...:   8%|██▎                         | 27/328 [00:02&lt;00:22, 13.52 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:02&lt;00:00,  2.77 url/s]
-Dl Size...:  14%|███▊                        | 45/328 [00:02&lt;00:12, 22.90 MiB/s]
-
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:02&lt;00:00,  2.77 url/s]
-Dl Size...:  14%|███▉                        | 46/328 [00:02&lt;00:12, 22.90 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:02&lt;00:00,  2.92 url/s]
+Dl Size...:   9%|██▍                         | 28/328 [00:02&lt;00:22, 13.52 MiB/s]
 
 Extraction completed...: 0 file [00:02, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:02&lt;00:00,  2.77 url/s]
-Dl Size...:  14%|████                        | 47/328 [00:02&lt;00:11, 25.07 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:02&lt;00:00,  2.92 url/s]
+Dl Size...:   9%|██▍                         | 29/328 [00:02&lt;00:18, 15.84 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:02&lt;00:00,  2.77 url/s]
-Dl Size...:  15%|████                        | 48/328 [00:02&lt;00:11, 25.07 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:02&lt;00:00,  2.92 url/s]
+Dl Size...:   9%|██▌                         | 30/328 [00:02&lt;00:18, 15.84 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:02&lt;00:00,  2.77 url/s]
-Dl Size...:  15%|████▏                       | 49/328 [00:02&lt;00:11, 25.07 MiB/s]
-
-Extraction completed...: 0 file [00:02, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:02&lt;00:00,  2.77 url/s]
-Dl Size...:  15%|████▎                       | 50/328 [00:02&lt;00:11, 25.22 MiB/s]
-
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:02&lt;00:00,  2.77 url/s]
-Dl Size...:  16%|████▎                       | 51/328 [00:02&lt;00:10, 25.22 MiB/s]
-
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:02&lt;00:00,  2.77 url/s]
-Dl Size...:  16%|████▍                       | 52/328 [00:02&lt;00:10, 25.22 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:02&lt;00:00,  2.92 url/s]
+Dl Size...:   9%|██▋                         | 31/328 [00:02&lt;00:18, 15.84 MiB/s]
 
 Extraction completed...: 0 file [00:02, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:02&lt;00:00,  2.77 url/s]
-Dl Size...:  16%|████▌                       | 53/328 [00:02&lt;00:10, 25.63 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:02&lt;00:00,  2.92 url/s]
+Dl Size...:  10%|██▋                         | 32/328 [00:02&lt;00:18, 16.36 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:03&lt;00:00,  2.77 url/s]
-Dl Size...:  16%|████▌                       | 54/328 [00:03&lt;00:10, 25.63 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:02&lt;00:00,  2.92 url/s]
+Dl Size...:  10%|██▊                         | 33/328 [00:02&lt;00:18, 16.36 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:03&lt;00:00,  2.77 url/s]
-Dl Size...:  17%|████▋                       | 55/328 [00:03&lt;00:10, 25.63 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:02&lt;00:00,  2.92 url/s]
+Dl Size...:  10%|██▉                         | 34/328 [00:02&lt;00:17, 16.36 MiB/s]
 
-Extraction completed...: 0 file [00:03, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:03&lt;00:00,  2.77 url/s]
-Dl Size...:  17%|████▊                       | 56/328 [00:03&lt;00:10, 25.85 MiB/s]
+Extraction completed...: 0 file [00:02, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:02&lt;00:00,  2.92 url/s]
+Dl Size...:  11%|██▉                         | 35/328 [00:02&lt;00:15, 18.62 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:03&lt;00:00,  2.77 url/s]
-Dl Size...:  17%|████▊                       | 57/328 [00:03&lt;00:10, 25.85 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:02&lt;00:00,  2.92 url/s]
+Dl Size...:  11%|███                         | 36/328 [00:02&lt;00:15, 18.62 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:03&lt;00:00,  2.77 url/s]
-Dl Size...:  18%|████▉                       | 58/328 [00:03&lt;00:10, 25.85 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:02&lt;00:00,  2.92 url/s]
+Dl Size...:  11%|███▏                        | 37/328 [00:02&lt;00:15, 18.62 MiB/s]
 
-Extraction completed...: 0 file [00:03, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:03&lt;00:00,  2.77 url/s]
-Dl Size...:  18%|█████                       | 59/328 [00:03&lt;00:10, 26.10 MiB/s]
+Extraction completed...: 0 file [00:02, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:02&lt;00:00,  2.92 url/s]
+Dl Size...:  12%|███▏                        | 38/328 [00:02&lt;00:14, 20.47 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:03&lt;00:00,  2.77 url/s]
-Dl Size...:  18%|█████                       | 60/328 [00:03&lt;00:10, 26.10 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:02&lt;00:00,  2.92 url/s]
+Dl Size...:  12%|███▎                        | 39/328 [00:02&lt;00:14, 20.47 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:03&lt;00:00,  2.77 url/s]
-Dl Size...:  19%|█████▏                      | 61/328 [00:03&lt;00:10, 26.10 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:02&lt;00:00,  2.92 url/s]
+Dl Size...:  12%|███▍                        | 40/328 [00:02&lt;00:14, 20.47 MiB/s]
 
-Extraction completed...: 0 file [00:03, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:03&lt;00:00,  2.77 url/s]
-Dl Size...:  19%|█████▎                      | 62/328 [00:03&lt;00:10, 26.48 MiB/s]
+Extraction completed...: 0 file [00:02, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:02&lt;00:00,  2.92 url/s]
+Dl Size...:  12%|███▌                        | 41/328 [00:02&lt;00:14, 19.59 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:03&lt;00:00,  2.77 url/s]
-Dl Size...:  19%|█████▍                      | 63/328 [00:03&lt;00:10, 26.48 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:02&lt;00:00,  2.92 url/s]
+Dl Size...:  13%|███▌                        | 42/328 [00:02&lt;00:14, 19.59 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:03&lt;00:00,  2.77 url/s]
-Dl Size...:  20%|█████▍                      | 64/328 [00:03&lt;00:09, 26.48 MiB/s]
-
-Extraction completed...: 0 file [00:03, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:03&lt;00:00,  2.77 url/s]
-Dl Size...:  20%|█████▌                      | 65/328 [00:03&lt;00:09, 26.47 MiB/s]
-
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:03&lt;00:00,  2.77 url/s]
-Dl Size...:  20%|█████▋                      | 66/328 [00:03&lt;00:09, 26.47 MiB/s]
-
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:03&lt;00:00,  2.77 url/s]
-Dl Size...:  20%|█████▋                      | 67/328 [00:03&lt;00:09, 26.47 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:03&lt;00:00,  2.92 url/s]
+Dl Size...:  13%|███▋                        | 43/328 [00:03&lt;00:14, 19.59 MiB/s]
 
 Extraction completed...: 0 file [00:03, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:03&lt;00:00,  2.77 url/s]
-Dl Size...:  21%|█████▊                      | 68/328 [00:03&lt;00:09, 26.75 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:03&lt;00:00,  2.92 url/s]
+Dl Size...:  13%|███▊                        | 44/328 [00:03&lt;00:13, 21.47 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:03&lt;00:00,  2.77 url/s]
-Dl Size...:  21%|█████▉                      | 69/328 [00:03&lt;00:09, 26.75 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:03&lt;00:00,  2.92 url/s]
+Dl Size...:  14%|███▊                        | 45/328 [00:03&lt;00:13, 21.47 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:03&lt;00:00,  2.77 url/s]
-Dl Size...:  21%|█████▉                      | 70/328 [00:03&lt;00:09, 26.75 MiB/s]
-
-Extraction completed...: 0 file [00:03, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:03&lt;00:00,  2.77 url/s]
-Dl Size...:  22%|██████                      | 71/328 [00:03&lt;00:09, 26.79 MiB/s]
-
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:03&lt;00:00,  2.77 url/s]
-Dl Size...:  22%|██████▏                     | 72/328 [00:03&lt;00:09, 26.79 MiB/s]
-
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:03&lt;00:00,  2.77 url/s]
-Dl Size...:  22%|██████▏                     | 73/328 [00:03&lt;00:09, 26.79 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:03&lt;00:00,  2.92 url/s]
+Dl Size...:  14%|███▉                        | 46/328 [00:03&lt;00:13, 21.47 MiB/s]
 
 Extraction completed...: 0 file [00:03, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:03&lt;00:00,  2.77 url/s]
-Dl Size...:  23%|██████▎                     | 74/328 [00:03&lt;00:09, 26.69 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:03&lt;00:00,  2.92 url/s]
+Dl Size...:  14%|████                        | 47/328 [00:03&lt;00:13, 21.61 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:03&lt;00:00,  2.77 url/s]
-Dl Size...:  23%|██████▍                     | 75/328 [00:03&lt;00:09, 26.69 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:03&lt;00:00,  2.92 url/s]
+Dl Size...:  15%|████                        | 48/328 [00:03&lt;00:12, 21.61 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:03&lt;00:00,  2.77 url/s]
-Dl Size...:  23%|██████▍                     | 76/328 [00:03&lt;00:09, 26.69 MiB/s]
-
-Extraction completed...: 0 file [00:03, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:03&lt;00:00,  2.77 url/s]
-Dl Size...:  23%|██████▌                     | 77/328 [00:03&lt;00:09, 26.47 MiB/s]
-
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:03&lt;00:00,  2.77 url/s]
-Dl Size...:  24%|██████▋                     | 78/328 [00:03&lt;00:09, 26.47 MiB/s]
-
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:03&lt;00:00,  2.77 url/s]
-Dl Size...:  24%|██████▋                     | 79/328 [00:03&lt;00:09, 26.47 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:03&lt;00:00,  2.92 url/s]
+Dl Size...:  15%|████▏                       | 49/328 [00:03&lt;00:12, 21.61 MiB/s]
 
 Extraction completed...: 0 file [00:03, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:04&lt;00:00,  2.77 url/s]
-Dl Size...:  24%|██████▊                     | 80/328 [00:04&lt;00:09, 26.67 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:03&lt;00:00,  2.92 url/s]
+Dl Size...:  15%|████▎                       | 50/328 [00:03&lt;00:12, 22.93 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:04&lt;00:00,  2.77 url/s]
-Dl Size...:  25%|██████▉                     | 81/328 [00:04&lt;00:09, 26.67 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:03&lt;00:00,  2.92 url/s]
+Dl Size...:  16%|████▎                       | 51/328 [00:03&lt;00:12, 22.93 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:04&lt;00:00,  2.77 url/s]
-Dl Size...:  25%|███████                     | 82/328 [00:04&lt;00:09, 26.67 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:03&lt;00:00,  2.92 url/s]
+Dl Size...:  16%|████▍                       | 52/328 [00:03&lt;00:12, 22.93 MiB/s]
 
-Extraction completed...: 0 file [00:04, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:04&lt;00:00,  2.77 url/s]
-Dl Size...:  25%|███████                     | 83/328 [00:04&lt;00:09, 26.76 MiB/s]
+Extraction completed...: 0 file [00:03, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:03&lt;00:00,  2.92 url/s]
+Dl Size...:  16%|████▌                       | 53/328 [00:03&lt;00:11, 23.90 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:04&lt;00:00,  2.77 url/s]
-Dl Size...:  26%|███████▏                    | 84/328 [00:04&lt;00:09, 26.76 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:03&lt;00:00,  2.92 url/s]
+Dl Size...:  16%|████▌                       | 54/328 [00:03&lt;00:11, 23.90 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:04&lt;00:00,  2.77 url/s]
-Dl Size...:  26%|███████▎                    | 85/328 [00:04&lt;00:09, 26.76 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:03&lt;00:00,  2.92 url/s]
+Dl Size...:  17%|████▋                       | 55/328 [00:03&lt;00:11, 23.90 MiB/s]
 
-Extraction completed...: 0 file [00:04, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:04&lt;00:00,  2.77 url/s]
-Dl Size...:  26%|███████▎                    | 86/328 [00:04&lt;00:08, 27.11 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:03&lt;00:00,  2.92 url/s]
+Dl Size...:  17%|████▊                       | 56/328 [00:03&lt;00:11, 23.90 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:04&lt;00:00,  2.77 url/s]
-Dl Size...:  27%|███████▍                    | 87/328 [00:04&lt;00:08, 27.11 MiB/s]
+Extraction completed...: 0 file [00:03, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:03&lt;00:00,  2.92 url/s]
+Dl Size...:  17%|████▊                       | 57/328 [00:03&lt;00:10, 26.17 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:04&lt;00:00,  2.77 url/s]
-Dl Size...:  27%|███████▌                    | 88/328 [00:04&lt;00:08, 27.11 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:03&lt;00:00,  2.92 url/s]
+Dl Size...:  18%|████▉                       | 58/328 [00:03&lt;00:10, 26.17 MiB/s]
 
-Extraction completed...: 0 file [00:04, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:04&lt;00:00,  2.77 url/s]
-Dl Size...:  27%|███████▌                    | 89/328 [00:04&lt;00:08, 27.67 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:03&lt;00:00,  2.92 url/s]
+Dl Size...:  18%|█████                       | 59/328 [00:03&lt;00:10, 26.17 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:04&lt;00:00,  2.77 url/s]
-Dl Size...:  27%|███████▋                    | 90/328 [00:04&lt;00:08, 27.67 MiB/s]
+Extraction completed...: 0 file [00:03, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:03&lt;00:00,  2.92 url/s]
+Dl Size...:  18%|█████                       | 60/328 [00:03&lt;00:09, 26.89 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:04&lt;00:00,  2.77 url/s]
-Dl Size...:  28%|███████▊                    | 91/328 [00:04&lt;00:08, 27.67 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:03&lt;00:00,  2.92 url/s]
+Dl Size...:  19%|█████▏                      | 61/328 [00:03&lt;00:09, 26.89 MiB/s]
 
-Extraction completed...: 0 file [00:04, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:04&lt;00:00,  2.77 url/s]
-Dl Size...:  28%|███████▊                    | 92/328 [00:04&lt;00:08, 27.68 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:03&lt;00:00,  2.92 url/s]
+Dl Size...:  19%|█████▎                      | 62/328 [00:03&lt;00:09, 26.89 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:04&lt;00:00,  2.77 url/s]
-Dl Size...:  28%|███████▉                    | 93/328 [00:04&lt;00:08, 27.68 MiB/s]
+Extraction completed...: 0 file [00:03, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:03&lt;00:00,  2.92 url/s]
+Dl Size...:  19%|█████▍                      | 63/328 [00:03&lt;00:09, 27.51 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:04&lt;00:00,  2.77 url/s]
-Dl Size...:  29%|████████                    | 94/328 [00:04&lt;00:08, 27.68 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:03&lt;00:00,  2.92 url/s]
+Dl Size...:  20%|█████▍                      | 64/328 [00:03&lt;00:09, 27.51 MiB/s]
 
-Extraction completed...: 0 file [00:04, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:04&lt;00:00,  2.77 url/s]
-Dl Size...:  29%|████████                    | 95/328 [00:04&lt;00:08, 27.98 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:03&lt;00:00,  2.92 url/s]
+Dl Size...:  20%|█████▌                      | 65/328 [00:03&lt;00:09, 27.51 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:04&lt;00:00,  2.77 url/s]
-Dl Size...:  29%|████████▏                   | 96/328 [00:04&lt;00:08, 27.98 MiB/s]
+Extraction completed...: 0 file [00:03, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:03&lt;00:00,  2.92 url/s]
+Dl Size...:  20%|█████▋                      | 66/328 [00:03&lt;00:09, 28.01 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:04&lt;00:00,  2.77 url/s]
-Dl Size...:  30%|████████▎                   | 97/328 [00:04&lt;00:08, 27.98 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:03&lt;00:00,  2.92 url/s]
+Dl Size...:  20%|█████▋                      | 67/328 [00:03&lt;00:09, 28.01 MiB/s]
 
-Extraction completed...: 0 file [00:04, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:04&lt;00:00,  2.77 url/s]
-Dl Size...:  30%|████████▎                   | 98/328 [00:04&lt;00:08, 27.66 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:03&lt;00:00,  2.92 url/s]
+Dl Size...:  21%|█████▊                      | 68/328 [00:03&lt;00:09, 28.01 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:04&lt;00:00,  2.77 url/s]
-Dl Size...:  30%|████████▍                   | 99/328 [00:04&lt;00:08, 27.66 MiB/s]
+Extraction completed...: 0 file [00:03, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:03&lt;00:00,  2.92 url/s]
+Dl Size...:  21%|█████▉                      | 69/328 [00:03&lt;00:09, 27.64 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:04&lt;00:00,  2.77 url/s]
-Dl Size...:  30%|████████▏                  | 100/328 [00:04&lt;00:08, 27.66 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:04&lt;00:00,  2.92 url/s]
+Dl Size...:  21%|█████▉                      | 70/328 [00:04&lt;00:09, 27.64 MiB/s]
 
-Extraction completed...: 0 file [00:04, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:04&lt;00:00,  2.77 url/s]
-Dl Size...:  31%|████████▎                  | 101/328 [00:04&lt;00:08, 27.08 MiB/s]
-
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:04&lt;00:00,  2.77 url/s]
-Dl Size...:  31%|████████▍                  | 102/328 [00:04&lt;00:08, 27.08 MiB/s]
-
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:04&lt;00:00,  2.77 url/s]
-Dl Size...:  31%|████████▍                  | 103/328 [00:04&lt;00:08, 27.08 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:04&lt;00:00,  2.92 url/s]
+Dl Size...:  22%|██████                      | 71/328 [00:04&lt;00:09, 27.64 MiB/s]
 
 Extraction completed...: 0 file [00:04, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:04&lt;00:00,  2.77 url/s]
-Dl Size...:  32%|████████▌                  | 104/328 [00:04&lt;00:08, 27.24 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:04&lt;00:00,  2.92 url/s]
+Dl Size...:  22%|██████▏                     | 72/328 [00:04&lt;00:09, 28.24 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:04&lt;00:00,  2.77 url/s]
-Dl Size...:  32%|████████▋                  | 105/328 [00:04&lt;00:08, 27.24 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:04&lt;00:00,  2.92 url/s]
+Dl Size...:  22%|██████▏                     | 73/328 [00:04&lt;00:09, 28.24 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:04&lt;00:00,  2.77 url/s]
-Dl Size...:  32%|████████▋                  | 106/328 [00:04&lt;00:08, 27.24 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:04&lt;00:00,  2.92 url/s]
+Dl Size...:  23%|██████▎                     | 74/328 [00:04&lt;00:08, 28.24 MiB/s]
+
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:04&lt;00:00,  2.92 url/s]
+Dl Size...:  23%|██████▍                     | 75/328 [00:04&lt;00:08, 28.24 MiB/s]
 
 Extraction completed...: 0 file [00:04, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:04&lt;00:00,  2.77 url/s]
-Dl Size...:  33%|████████▊                  | 107/328 [00:04&lt;00:08, 26.86 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:04&lt;00:00,  2.92 url/s]
+Dl Size...:  23%|██████▍                     | 76/328 [00:04&lt;00:09, 27.25 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:05&lt;00:00,  2.77 url/s]
-Dl Size...:  33%|████████▉                  | 108/328 [00:05&lt;00:08, 26.86 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:04&lt;00:00,  2.92 url/s]
+Dl Size...:  23%|██████▌                     | 77/328 [00:04&lt;00:09, 27.25 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:05&lt;00:00,  2.77 url/s]
-Dl Size...:  33%|████████▉                  | 109/328 [00:05&lt;00:08, 26.86 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:04&lt;00:00,  2.92 url/s]
+Dl Size...:  24%|██████▋                     | 78/328 [00:04&lt;00:09, 27.25 MiB/s]
 
-Extraction completed...: 0 file [00:05, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:05&lt;00:00,  2.77 url/s]
-Dl Size...:  34%|█████████                  | 110/328 [00:05&lt;00:08, 26.50 MiB/s]
+Extraction completed...: 0 file [00:04, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:04&lt;00:00,  2.92 url/s]
+Dl Size...:  24%|██████▋                     | 79/328 [00:04&lt;00:08, 27.95 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:05&lt;00:00,  2.77 url/s]
-Dl Size...:  34%|█████████▏                 | 111/328 [00:05&lt;00:08, 26.50 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:04&lt;00:00,  2.92 url/s]
+Dl Size...:  24%|██████▊                     | 80/328 [00:04&lt;00:08, 27.95 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:05&lt;00:00,  2.77 url/s]
-Dl Size...:  34%|█████████▏                 | 112/328 [00:05&lt;00:08, 26.50 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:04&lt;00:00,  2.92 url/s]
+Dl Size...:  25%|██████▉                     | 81/328 [00:04&lt;00:08, 27.95 MiB/s]
 
-Extraction completed...: 0 file [00:05, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:05&lt;00:00,  2.77 url/s]
-Dl Size...:  34%|█████████▎                 | 113/328 [00:05&lt;00:07, 27.12 MiB/s]
+Extraction completed...: 0 file [00:04, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:04&lt;00:00,  2.92 url/s]
+Dl Size...:  25%|███████                     | 82/328 [00:04&lt;00:08, 28.41 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:05&lt;00:00,  2.77 url/s]
-Dl Size...:  35%|█████████▍                 | 114/328 [00:05&lt;00:07, 27.12 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:04&lt;00:00,  2.92 url/s]
+Dl Size...:  25%|███████                     | 83/328 [00:04&lt;00:08, 28.41 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:05&lt;00:00,  2.77 url/s]
-Dl Size...:  35%|█████████▍                 | 115/328 [00:05&lt;00:07, 27.12 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:04&lt;00:00,  2.92 url/s]
+Dl Size...:  26%|███████▏                    | 84/328 [00:04&lt;00:08, 28.41 MiB/s]
 
-Extraction completed...: 0 file [00:05, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:05&lt;00:00,  2.77 url/s]
-Dl Size...:  35%|█████████▌                 | 116/328 [00:05&lt;00:07, 26.98 MiB/s]
+Extraction completed...: 0 file [00:04, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:04&lt;00:00,  2.92 url/s]
+Dl Size...:  26%|███████▎                    | 85/328 [00:04&lt;00:08, 28.55 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:05&lt;00:00,  2.77 url/s]
-Dl Size...:  36%|█████████▋                 | 117/328 [00:05&lt;00:07, 26.98 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:04&lt;00:00,  2.92 url/s]
+Dl Size...:  26%|███████▎                    | 86/328 [00:04&lt;00:08, 28.55 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:05&lt;00:00,  2.77 url/s]
-Dl Size...:  36%|█████████▋                 | 118/328 [00:05&lt;00:07, 26.98 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:04&lt;00:00,  2.92 url/s]
+Dl Size...:  27%|███████▍                    | 87/328 [00:04&lt;00:08, 28.55 MiB/s]
 
-Extraction completed...: 0 file [00:05, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:05&lt;00:00,  2.77 url/s]
-Dl Size...:  36%|█████████▊                 | 119/328 [00:05&lt;00:07, 27.50 MiB/s]
+Extraction completed...: 0 file [00:04, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:04&lt;00:00,  2.92 url/s]
+Dl Size...:  27%|███████▌                    | 88/328 [00:04&lt;00:08, 28.62 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:05&lt;00:00,  2.77 url/s]
-Dl Size...:  37%|█████████▉                 | 120/328 [00:05&lt;00:07, 27.50 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:04&lt;00:00,  2.92 url/s]
+Dl Size...:  27%|███████▌                    | 89/328 [00:04&lt;00:08, 28.62 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:05&lt;00:00,  2.77 url/s]
-Dl Size...:  37%|█████████▉                 | 121/328 [00:05&lt;00:07, 27.50 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:04&lt;00:00,  2.92 url/s]
+Dl Size...:  27%|███████▋                    | 90/328 [00:04&lt;00:08, 28.62 MiB/s]
 
-Extraction completed...: 0 file [00:05, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:05&lt;00:00,  2.77 url/s]
-Dl Size...:  37%|██████████                 | 122/328 [00:05&lt;00:07, 27.12 MiB/s]
+Extraction completed...: 0 file [00:04, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:04&lt;00:00,  2.92 url/s]
+Dl Size...:  28%|███████▊                    | 91/328 [00:04&lt;00:08, 28.75 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:05&lt;00:00,  2.77 url/s]
-Dl Size...:  38%|██████████▏                | 123/328 [00:05&lt;00:07, 27.12 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:04&lt;00:00,  2.92 url/s]
+Dl Size...:  28%|███████▊                    | 92/328 [00:04&lt;00:08, 28.75 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:05&lt;00:00,  2.77 url/s]
-Dl Size...:  38%|██████████▏                | 124/328 [00:05&lt;00:07, 27.12 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:04&lt;00:00,  2.92 url/s]
+Dl Size...:  28%|███████▉                    | 93/328 [00:04&lt;00:08, 28.75 MiB/s]
 
-Extraction completed...: 0 file [00:05, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:05&lt;00:00,  2.77 url/s]
-Dl Size...:  38%|██████████▎                | 125/328 [00:05&lt;00:07, 27.36 MiB/s]
+Extraction completed...: 0 file [00:04, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:04&lt;00:00,  2.92 url/s]
+Dl Size...:  29%|████████                    | 94/328 [00:04&lt;00:08, 28.94 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:05&lt;00:00,  2.77 url/s]
-Dl Size...:  38%|██████████▎                | 126/328 [00:05&lt;00:07, 27.36 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:04&lt;00:00,  2.92 url/s]
+Dl Size...:  29%|████████                    | 95/328 [00:04&lt;00:08, 28.94 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:05&lt;00:00,  2.77 url/s]
-Dl Size...:  39%|██████████▍                | 127/328 [00:05&lt;00:07, 27.36 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:04&lt;00:00,  2.92 url/s]
+Dl Size...:  29%|████████▏                   | 96/328 [00:04&lt;00:08, 28.94 MiB/s]
 
-Extraction completed...: 0 file [00:05, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:05&lt;00:00,  2.77 url/s]
-Dl Size...:  39%|██████████▌                | 128/328 [00:05&lt;00:07, 27.13 MiB/s]
+Extraction completed...: 0 file [00:04, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:04&lt;00:00,  2.92 url/s]
+Dl Size...:  30%|████████▎                   | 97/328 [00:04&lt;00:07, 29.05 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:05&lt;00:00,  2.77 url/s]
-Dl Size...:  39%|██████████▌                | 129/328 [00:05&lt;00:07, 27.13 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:04&lt;00:00,  2.92 url/s]
+Dl Size...:  30%|████████▎                   | 98/328 [00:04&lt;00:07, 29.05 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:05&lt;00:00,  2.77 url/s]
-Dl Size...:  40%|██████████▋                | 130/328 [00:05&lt;00:07, 27.13 MiB/s]
-
-Extraction completed...: 0 file [00:05, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:05&lt;00:00,  2.77 url/s]
-Dl Size...:  40%|██████████▊                | 131/328 [00:05&lt;00:07, 27.21 MiB/s]
-
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:05&lt;00:00,  2.77 url/s]
-Dl Size...:  40%|██████████▊                | 132/328 [00:05&lt;00:07, 27.21 MiB/s]
-
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:05&lt;00:00,  2.77 url/s]
-Dl Size...:  41%|██████████▉                | 133/328 [00:05&lt;00:07, 27.21 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:05&lt;00:00,  2.92 url/s]
+Dl Size...:  30%|████████▍                   | 99/328 [00:05&lt;00:07, 29.05 MiB/s]
 
 Extraction completed...: 0 file [00:05, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:05&lt;00:00,  2.77 url/s]
-Dl Size...:  41%|███████████                | 134/328 [00:05&lt;00:07, 27.02 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:05&lt;00:00,  2.92 url/s]
+Dl Size...:  30%|████████▏                  | 100/328 [00:05&lt;00:07, 29.04 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:06&lt;00:00,  2.77 url/s]
-Dl Size...:  41%|███████████                | 135/328 [00:06&lt;00:07, 27.02 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:05&lt;00:00,  2.92 url/s]
+Dl Size...:  31%|████████▎                  | 101/328 [00:05&lt;00:07, 29.04 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:06&lt;00:00,  2.77 url/s]
-Dl Size...:  41%|███████████▏               | 136/328 [00:06&lt;00:07, 27.02 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:05&lt;00:00,  2.92 url/s]
+Dl Size...:  31%|████████▍                  | 102/328 [00:05&lt;00:07, 29.04 MiB/s]
+
+Extraction completed...: 0 file [00:05, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:05&lt;00:00,  2.92 url/s]
+Dl Size...:  31%|████████▍                  | 103/328 [00:05&lt;00:07, 29.14 MiB/s]
+
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:05&lt;00:00,  2.92 url/s]
+Dl Size...:  32%|████████▌                  | 104/328 [00:05&lt;00:07, 29.14 MiB/s]
+
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:05&lt;00:00,  2.92 url/s]
+Dl Size...:  32%|████████▋                  | 105/328 [00:05&lt;00:07, 29.14 MiB/s]
+
+Extraction completed...: 0 file [00:05, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:05&lt;00:00,  2.92 url/s]
+Dl Size...:  32%|████████▋                  | 106/328 [00:05&lt;00:07, 29.35 MiB/s]
+
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:05&lt;00:00,  2.92 url/s]
+Dl Size...:  33%|████████▊                  | 107/328 [00:05&lt;00:07, 29.35 MiB/s]
+
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:05&lt;00:00,  2.92 url/s]
+Dl Size...:  33%|████████▉                  | 108/328 [00:05&lt;00:07, 29.35 MiB/s]
+
+Extraction completed...: 0 file [00:05, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:05&lt;00:00,  2.92 url/s]
+Dl Size...:  33%|████████▉                  | 109/328 [00:05&lt;00:07, 28.96 MiB/s]
+
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:05&lt;00:00,  2.92 url/s]
+Dl Size...:  34%|█████████                  | 110/328 [00:05&lt;00:07, 28.96 MiB/s]
+
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:05&lt;00:00,  2.92 url/s]
+Dl Size...:  34%|█████████▏                 | 111/328 [00:05&lt;00:07, 28.96 MiB/s]
+
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:05&lt;00:00,  2.92 url/s]
+Dl Size...:  34%|█████████▏                 | 112/328 [00:05&lt;00:07, 28.96 MiB/s]
+
+Extraction completed...: 0 file [00:05, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:05&lt;00:00,  2.92 url/s]
+Dl Size...:  34%|█████████▎                 | 113/328 [00:05&lt;00:07, 30.08 MiB/s]
+
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:05&lt;00:00,  2.92 url/s]
+Dl Size...:  35%|█████████▍                 | 114/328 [00:05&lt;00:07, 30.08 MiB/s]
+
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:05&lt;00:00,  2.92 url/s]
+Dl Size...:  35%|█████████▍                 | 115/328 [00:05&lt;00:07, 30.08 MiB/s]
+
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:05&lt;00:00,  2.92 url/s]
+Dl Size...:  35%|█████████▌                 | 116/328 [00:05&lt;00:07, 30.08 MiB/s]
+
+Extraction completed...: 0 file [00:05, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:05&lt;00:00,  2.92 url/s]
+Dl Size...:  36%|█████████▋                 | 117/328 [00:05&lt;00:07, 28.66 MiB/s]
+
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:05&lt;00:00,  2.92 url/s]
+Dl Size...:  36%|█████████▋                 | 118/328 [00:05&lt;00:07, 28.66 MiB/s]
+
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:05&lt;00:00,  2.92 url/s]
+Dl Size...:  36%|█████████▊                 | 119/328 [00:05&lt;00:07, 28.66 MiB/s]
+
+Extraction completed...: 0 file [00:05, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:05&lt;00:00,  2.92 url/s]
+Dl Size...:  37%|█████████▉                 | 120/328 [00:05&lt;00:07, 28.85 MiB/s]
+
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:05&lt;00:00,  2.92 url/s]
+Dl Size...:  37%|█████████▉                 | 121/328 [00:05&lt;00:07, 28.85 MiB/s]
+
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:05&lt;00:00,  2.92 url/s]
+Dl Size...:  37%|██████████                 | 122/328 [00:05&lt;00:07, 28.85 MiB/s]
+
+Extraction completed...: 0 file [00:05, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:05&lt;00:00,  2.92 url/s]
+Dl Size...:  38%|██████████▏                | 123/328 [00:05&lt;00:07, 28.20 MiB/s]
+
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:05&lt;00:00,  2.92 url/s]
+Dl Size...:  38%|██████████▏                | 124/328 [00:05&lt;00:07, 28.20 MiB/s]
+
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:05&lt;00:00,  2.92 url/s]
+Dl Size...:  38%|██████████▎                | 125/328 [00:05&lt;00:07, 28.20 MiB/s]
+
+Extraction completed...: 0 file [00:05, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:05&lt;00:00,  2.92 url/s]
+Dl Size...:  38%|██████████▎                | 126/328 [00:05&lt;00:07, 28.67 MiB/s]
+
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:05&lt;00:00,  2.92 url/s]
+Dl Size...:  39%|██████████▍                | 127/328 [00:05&lt;00:07, 28.67 MiB/s]
+
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:05&lt;00:00,  2.92 url/s]
+Dl Size...:  39%|██████████▌                | 128/328 [00:05&lt;00:06, 28.67 MiB/s]
+
+Extraction completed...: 0 file [00:05, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:06&lt;00:00,  2.92 url/s]
+Dl Size...:  39%|██████████▌                | 129/328 [00:06&lt;00:06, 28.76 MiB/s]
+
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:06&lt;00:00,  2.92 url/s]
+Dl Size...:  40%|██████████▋                | 130/328 [00:06&lt;00:06, 28.76 MiB/s]
+
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:06&lt;00:00,  2.92 url/s]
+Dl Size...:  40%|██████████▊                | 131/328 [00:06&lt;00:06, 28.76 MiB/s]
 
 Extraction completed...: 0 file [00:06, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:06&lt;00:00,  2.77 url/s]
-Dl Size...:  42%|███████████▎               | 137/328 [00:06&lt;00:07, 27.00 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:06&lt;00:00,  2.92 url/s]
+Dl Size...:  40%|██████████▊                | 132/328 [00:06&lt;00:06, 28.71 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:06&lt;00:00,  2.77 url/s]
-Dl Size...:  42%|███████████▎               | 138/328 [00:06&lt;00:07, 27.00 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:06&lt;00:00,  2.92 url/s]
+Dl Size...:  41%|██████████▉                | 133/328 [00:06&lt;00:06, 28.71 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:06&lt;00:00,  2.77 url/s]
-Dl Size...:  42%|███████████▍               | 139/328 [00:06&lt;00:06, 27.00 MiB/s]
-
-Extraction completed...: 0 file [00:06, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:06&lt;00:00,  2.77 url/s]
-Dl Size...:  43%|███████████▌               | 140/328 [00:06&lt;00:06, 27.12 MiB/s]
-
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:06&lt;00:00,  2.77 url/s]
-Dl Size...:  43%|███████████▌               | 141/328 [00:06&lt;00:06, 27.12 MiB/s]
-
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:06&lt;00:00,  2.77 url/s]
-Dl Size...:  43%|███████████▋               | 142/328 [00:06&lt;00:06, 27.12 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:06&lt;00:00,  2.92 url/s]
+Dl Size...:  41%|███████████                | 134/328 [00:06&lt;00:06, 28.71 MiB/s]
 
 Extraction completed...: 0 file [00:06, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:06&lt;00:00,  2.77 url/s]
-Dl Size...:  44%|███████████▊               | 143/328 [00:06&lt;00:06, 27.24 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:06&lt;00:00,  2.92 url/s]
+Dl Size...:  41%|███████████                | 135/328 [00:06&lt;00:06, 29.08 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:06&lt;00:00,  2.77 url/s]
-Dl Size...:  44%|███████████▊               | 144/328 [00:06&lt;00:06, 27.24 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:06&lt;00:00,  2.92 url/s]
+Dl Size...:  41%|███████████▏               | 136/328 [00:06&lt;00:06, 29.08 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:06&lt;00:00,  2.77 url/s]
-Dl Size...:  44%|███████████▉               | 145/328 [00:06&lt;00:06, 27.24 MiB/s]
-
-Extraction completed...: 0 file [00:06, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:06&lt;00:00,  2.77 url/s]
-Dl Size...:  45%|████████████               | 146/328 [00:06&lt;00:06, 27.00 MiB/s]
-
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:06&lt;00:00,  2.77 url/s]
-Dl Size...:  45%|████████████               | 147/328 [00:06&lt;00:06, 27.00 MiB/s]
-
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:06&lt;00:00,  2.77 url/s]
-Dl Size...:  45%|████████████▏              | 148/328 [00:06&lt;00:06, 27.00 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:06&lt;00:00,  2.92 url/s]
+Dl Size...:  42%|███████████▎               | 137/328 [00:06&lt;00:06, 29.08 MiB/s]
 
 Extraction completed...: 0 file [00:06, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:06&lt;00:00,  2.77 url/s]
-Dl Size...:  45%|████████████▎              | 149/328 [00:06&lt;00:06, 26.69 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:06&lt;00:00,  2.92 url/s]
+Dl Size...:  42%|███████████▎               | 138/328 [00:06&lt;00:06, 29.11 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:06&lt;00:00,  2.77 url/s]
-Dl Size...:  46%|████████████▎              | 150/328 [00:06&lt;00:06, 26.69 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:06&lt;00:00,  2.92 url/s]
+Dl Size...:  42%|███████████▍               | 139/328 [00:06&lt;00:06, 29.11 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:06&lt;00:00,  2.77 url/s]
-Dl Size...:  46%|████████████▍              | 151/328 [00:06&lt;00:06, 26.69 MiB/s]
-
-Extraction completed...: 0 file [00:06, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:06&lt;00:00,  2.77 url/s]
-Dl Size...:  46%|████████████▌              | 152/328 [00:06&lt;00:06, 26.73 MiB/s]
-
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:06&lt;00:00,  2.77 url/s]
-Dl Size...:  47%|████████████▌              | 153/328 [00:06&lt;00:06, 26.73 MiB/s]
-
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:06&lt;00:00,  2.77 url/s]
-Dl Size...:  47%|████████████▋              | 154/328 [00:06&lt;00:06, 26.73 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:06&lt;00:00,  2.92 url/s]
+Dl Size...:  43%|███████████▌               | 140/328 [00:06&lt;00:06, 29.11 MiB/s]
 
 Extraction completed...: 0 file [00:06, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:06&lt;00:00,  2.77 url/s]
-Dl Size...:  47%|████████████▊              | 155/328 [00:06&lt;00:06, 27.44 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:06&lt;00:00,  2.92 url/s]
+Dl Size...:  43%|███████████▌               | 141/328 [00:06&lt;00:06, 29.31 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:06&lt;00:00,  2.77 url/s]
-Dl Size...:  48%|████████████▊              | 156/328 [00:06&lt;00:06, 27.44 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:06&lt;00:00,  2.92 url/s]
+Dl Size...:  43%|███████████▋               | 142/328 [00:06&lt;00:06, 29.31 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:06&lt;00:00,  2.77 url/s]
-Dl Size...:  48%|████████████▉              | 157/328 [00:06&lt;00:06, 27.44 MiB/s]
-
-Extraction completed...: 0 file [00:06, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:06&lt;00:00,  2.77 url/s]
-Dl Size...:  48%|█████████████              | 158/328 [00:06&lt;00:06, 27.77 MiB/s]
-
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:06&lt;00:00,  2.77 url/s]
-Dl Size...:  48%|█████████████              | 159/328 [00:06&lt;00:06, 27.77 MiB/s]
-
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:06&lt;00:00,  2.77 url/s]
-Dl Size...:  49%|█████████████▏             | 160/328 [00:06&lt;00:06, 27.77 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:06&lt;00:00,  2.92 url/s]
+Dl Size...:  44%|███████████▊               | 143/328 [00:06&lt;00:06, 29.31 MiB/s]
 
 Extraction completed...: 0 file [00:06, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:06&lt;00:00,  2.77 url/s]
-Dl Size...:  49%|█████████████▎             | 161/328 [00:06&lt;00:06, 27.12 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:06&lt;00:00,  2.92 url/s]
+Dl Size...:  44%|███████████▊               | 144/328 [00:06&lt;00:06, 28.98 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:07&lt;00:00,  2.77 url/s]
-Dl Size...:  49%|█████████████▎             | 162/328 [00:07&lt;00:06, 27.12 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:06&lt;00:00,  2.92 url/s]
+Dl Size...:  44%|███████████▉               | 145/328 [00:06&lt;00:06, 28.98 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:07&lt;00:00,  2.77 url/s]
-Dl Size...:  50%|█████████████▍             | 163/328 [00:07&lt;00:06, 27.12 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:06&lt;00:00,  2.92 url/s]
+Dl Size...:  45%|████████████               | 146/328 [00:06&lt;00:06, 28.98 MiB/s]
 
-Extraction completed...: 0 file [00:07, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:07&lt;00:00,  2.77 url/s]
-Dl Size...:  50%|█████████████▌             | 164/328 [00:07&lt;00:06, 27.20 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:06&lt;00:00,  2.92 url/s]
+Dl Size...:  45%|████████████               | 147/328 [00:06&lt;00:06, 28.98 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:07&lt;00:00,  2.77 url/s]
-Dl Size...:  50%|█████████████▌             | 165/328 [00:07&lt;00:05, 27.20 MiB/s]
+Extraction completed...: 0 file [00:06, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:06&lt;00:00,  2.92 url/s]
+Dl Size...:  45%|████████████▏              | 148/328 [00:06&lt;00:05, 30.29 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:07&lt;00:00,  2.77 url/s]
-Dl Size...:  51%|█████████████▋             | 166/328 [00:07&lt;00:05, 27.20 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:06&lt;00:00,  2.92 url/s]
+Dl Size...:  45%|████████████▎              | 149/328 [00:06&lt;00:05, 30.29 MiB/s]
 
-Extraction completed...: 0 file [00:07, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:07&lt;00:00,  2.77 url/s]
-Dl Size...:  51%|█████████████▋             | 167/328 [00:07&lt;00:06, 26.77 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:06&lt;00:00,  2.92 url/s]
+Dl Size...:  46%|████████████▎              | 150/328 [00:06&lt;00:05, 30.29 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:07&lt;00:00,  2.77 url/s]
-Dl Size...:  51%|█████████████▊             | 168/328 [00:07&lt;00:05, 26.77 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:06&lt;00:00,  2.92 url/s]
+Dl Size...:  46%|████████████▍              | 151/328 [00:06&lt;00:05, 30.29 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:07&lt;00:00,  2.77 url/s]
-Dl Size...:  52%|█████████████▉             | 169/328 [00:07&lt;00:05, 26.77 MiB/s]
+Extraction completed...: 0 file [00:06, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:06&lt;00:00,  2.92 url/s]
+Dl Size...:  46%|████████████▌              | 152/328 [00:06&lt;00:06, 29.10 MiB/s]
 
-Extraction completed...: 0 file [00:07, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:07&lt;00:00,  2.77 url/s]
-Dl Size...:  52%|█████████████▉             | 170/328 [00:07&lt;00:05, 26.59 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:06&lt;00:00,  2.92 url/s]
+Dl Size...:  47%|████████████▌              | 153/328 [00:06&lt;00:06, 29.10 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:07&lt;00:00,  2.77 url/s]
-Dl Size...:  52%|██████████████             | 171/328 [00:07&lt;00:05, 26.59 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:06&lt;00:00,  2.92 url/s]
+Dl Size...:  47%|████████████▋              | 154/328 [00:06&lt;00:05, 29.10 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:07&lt;00:00,  2.77 url/s]
-Dl Size...:  52%|██████████████▏            | 172/328 [00:07&lt;00:05, 26.59 MiB/s]
+Extraction completed...: 0 file [00:06, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:06&lt;00:00,  2.92 url/s]
+Dl Size...:  47%|████████████▊              | 155/328 [00:06&lt;00:05, 29.01 MiB/s]
 
-Extraction completed...: 0 file [00:07, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:07&lt;00:00,  2.77 url/s]
-Dl Size...:  53%|██████████████▏            | 173/328 [00:07&lt;00:05, 26.82 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:06&lt;00:00,  2.92 url/s]
+Dl Size...:  48%|████████████▊              | 156/328 [00:06&lt;00:05, 29.01 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:07&lt;00:00,  2.77 url/s]
-Dl Size...:  53%|██████████████▎            | 174/328 [00:07&lt;00:05, 26.82 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:06&lt;00:00,  2.92 url/s]
+Dl Size...:  48%|████████████▉              | 157/328 [00:06&lt;00:05, 29.01 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:07&lt;00:00,  2.77 url/s]
-Dl Size...:  53%|██████████████▍            | 175/328 [00:07&lt;00:05, 26.82 MiB/s]
-
-Extraction completed...: 0 file [00:07, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:07&lt;00:00,  2.77 url/s]
-Dl Size...:  54%|██████████████▍            | 176/328 [00:07&lt;00:05, 26.89 MiB/s]
-
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:07&lt;00:00,  2.77 url/s]
-Dl Size...:  54%|██████████████▌            | 177/328 [00:07&lt;00:05, 26.89 MiB/s]
-
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:07&lt;00:00,  2.77 url/s]
-Dl Size...:  54%|██████████████▋            | 178/328 [00:07&lt;00:05, 26.89 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:07&lt;00:00,  2.92 url/s]
+Dl Size...:  48%|█████████████              | 158/328 [00:07&lt;00:05, 29.01 MiB/s]
 
 Extraction completed...: 0 file [00:07, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:07&lt;00:00,  2.77 url/s]
-Dl Size...:  55%|██████████████▋            | 179/328 [00:07&lt;00:05, 26.45 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:07&lt;00:00,  2.92 url/s]
+Dl Size...:  48%|█████████████              | 159/328 [00:07&lt;00:05, 28.94 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:07&lt;00:00,  2.77 url/s]
-Dl Size...:  55%|██████████████▊            | 180/328 [00:07&lt;00:05, 26.45 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:07&lt;00:00,  2.92 url/s]
+Dl Size...:  49%|█████████████▏             | 160/328 [00:07&lt;00:05, 28.94 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:07&lt;00:00,  2.77 url/s]
-Dl Size...:  55%|██████████████▉            | 181/328 [00:07&lt;00:05, 26.45 MiB/s]
-
-Extraction completed...: 0 file [00:07, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:07&lt;00:00,  2.77 url/s]
-Dl Size...:  55%|██████████████▉            | 182/328 [00:07&lt;00:05, 26.34 MiB/s]
-
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:07&lt;00:00,  2.77 url/s]
-Dl Size...:  56%|███████████████            | 183/328 [00:07&lt;00:05, 26.34 MiB/s]
-
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:07&lt;00:00,  2.77 url/s]
-Dl Size...:  56%|███████████████▏           | 184/328 [00:07&lt;00:05, 26.34 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:07&lt;00:00,  2.92 url/s]
+Dl Size...:  49%|█████████████▎             | 161/328 [00:07&lt;00:05, 28.94 MiB/s]
 
 Extraction completed...: 0 file [00:07, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:07&lt;00:00,  2.77 url/s]
-Dl Size...:  56%|███████████████▏           | 185/328 [00:07&lt;00:05, 26.55 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:07&lt;00:00,  2.92 url/s]
+Dl Size...:  49%|█████████████▎             | 162/328 [00:07&lt;00:05, 29.04 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:07&lt;00:00,  2.77 url/s]
-Dl Size...:  57%|███████████████▎           | 186/328 [00:07&lt;00:05, 26.55 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:07&lt;00:00,  2.92 url/s]
+Dl Size...:  50%|█████████████▍             | 163/328 [00:07&lt;00:05, 29.04 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:07&lt;00:00,  2.77 url/s]
-Dl Size...:  57%|███████████████▍           | 187/328 [00:07&lt;00:05, 26.55 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:07&lt;00:00,  2.92 url/s]
+Dl Size...:  50%|█████████████▌             | 164/328 [00:07&lt;00:05, 29.04 MiB/s]
+
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:07&lt;00:00,  2.92 url/s]
+Dl Size...:  50%|█████████████▌             | 165/328 [00:07&lt;00:05, 29.04 MiB/s]
 
 Extraction completed...: 0 file [00:07, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:08&lt;00:00,  2.77 url/s]
-Dl Size...:  57%|███████████████▍           | 188/328 [00:08&lt;00:05, 26.47 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:07&lt;00:00,  2.92 url/s]
+Dl Size...:  51%|█████████████▋             | 166/328 [00:07&lt;00:05, 29.81 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:08&lt;00:00,  2.77 url/s]
-Dl Size...:  58%|███████████████▌           | 189/328 [00:08&lt;00:05, 26.47 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:07&lt;00:00,  2.92 url/s]
+Dl Size...:  51%|█████████████▋             | 167/328 [00:07&lt;00:05, 29.81 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:08&lt;00:00,  2.77 url/s]
-Dl Size...:  58%|███████████████▋           | 190/328 [00:08&lt;00:05, 26.47 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:07&lt;00:00,  2.92 url/s]
+Dl Size...:  51%|█████████████▊             | 168/328 [00:07&lt;00:05, 29.81 MiB/s]
 
-Extraction completed...: 0 file [00:08, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:08&lt;00:00,  2.77 url/s]
-Dl Size...:  58%|███████████████▋           | 191/328 [00:08&lt;00:05, 26.56 MiB/s]
+Extraction completed...: 0 file [00:07, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:07&lt;00:00,  2.92 url/s]
+Dl Size...:  52%|█████████████▉             | 169/328 [00:07&lt;00:05, 29.40 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:08&lt;00:00,  2.77 url/s]
-Dl Size...:  59%|███████████████▊           | 192/328 [00:08&lt;00:05, 26.56 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:07&lt;00:00,  2.92 url/s]
+Dl Size...:  52%|█████████████▉             | 170/328 [00:07&lt;00:05, 29.40 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:08&lt;00:00,  2.77 url/s]
-Dl Size...:  59%|███████████████▉           | 193/328 [00:08&lt;00:05, 26.56 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:07&lt;00:00,  2.92 url/s]
+Dl Size...:  52%|██████████████             | 171/328 [00:07&lt;00:05, 29.40 MiB/s]
 
-Extraction completed...: 0 file [00:08, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:08&lt;00:00,  2.77 url/s]
-Dl Size...:  59%|███████████████▉           | 194/328 [00:08&lt;00:05, 26.52 MiB/s]
+Extraction completed...: 0 file [00:07, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:07&lt;00:00,  2.92 url/s]
+Dl Size...:  52%|██████████████▏            | 172/328 [00:07&lt;00:05, 29.26 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:08&lt;00:00,  2.77 url/s]
-Dl Size...:  59%|████████████████           | 195/328 [00:08&lt;00:05, 26.52 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:07&lt;00:00,  2.92 url/s]
+Dl Size...:  53%|██████████████▏            | 173/328 [00:07&lt;00:05, 29.26 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:08&lt;00:00,  2.77 url/s]
-Dl Size...:  60%|████████████████▏          | 196/328 [00:08&lt;00:04, 26.52 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:07&lt;00:00,  2.92 url/s]
+Dl Size...:  53%|██████████████▎            | 174/328 [00:07&lt;00:05, 29.26 MiB/s]
 
-Extraction completed...: 0 file [00:08, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:08&lt;00:00,  2.77 url/s]
-Dl Size...:  60%|████████████████▏          | 197/328 [00:08&lt;00:04, 26.73 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:07&lt;00:00,  2.92 url/s]
+Dl Size...:  53%|██████████████▍            | 175/328 [00:07&lt;00:05, 29.26 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:08&lt;00:00,  2.77 url/s]
-Dl Size...:  60%|████████████████▎          | 198/328 [00:08&lt;00:04, 26.73 MiB/s]
+Extraction completed...: 0 file [00:07, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:07&lt;00:00,  2.92 url/s]
+Dl Size...:  54%|██████████████▍            | 176/328 [00:07&lt;00:05, 28.16 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:08&lt;00:00,  2.77 url/s]
-Dl Size...:  61%|████████████████▍          | 199/328 [00:08&lt;00:04, 26.73 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:07&lt;00:00,  2.92 url/s]
+Dl Size...:  54%|██████████████▌            | 177/328 [00:07&lt;00:05, 28.16 MiB/s]
 
-Extraction completed...: 0 file [00:08, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:08&lt;00:00,  2.77 url/s]
-Dl Size...:  61%|████████████████▍          | 200/328 [00:08&lt;00:04, 26.72 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:07&lt;00:00,  2.92 url/s]
+Dl Size...:  54%|██████████████▋            | 178/328 [00:07&lt;00:05, 28.16 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:08&lt;00:00,  2.77 url/s]
-Dl Size...:  61%|████████████████▌          | 201/328 [00:08&lt;00:04, 26.72 MiB/s]
+Extraction completed...: 0 file [00:07, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:07&lt;00:00,  2.92 url/s]
+Dl Size...:  55%|██████████████▋            | 179/328 [00:07&lt;00:05, 28.47 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:08&lt;00:00,  2.77 url/s]
-Dl Size...:  62%|████████████████▋          | 202/328 [00:08&lt;00:04, 26.72 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:07&lt;00:00,  2.92 url/s]
+Dl Size...:  55%|██████████████▊            | 180/328 [00:07&lt;00:05, 28.47 MiB/s]
 
-Extraction completed...: 0 file [00:08, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:08&lt;00:00,  2.77 url/s]
-Dl Size...:  62%|████████████████▋          | 203/328 [00:08&lt;00:04, 26.61 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:07&lt;00:00,  2.92 url/s]
+Dl Size...:  55%|██████████████▉            | 181/328 [00:07&lt;00:05, 28.47 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:08&lt;00:00,  2.77 url/s]
-Dl Size...:  62%|████████████████▊          | 204/328 [00:08&lt;00:04, 26.61 MiB/s]
+Extraction completed...: 0 file [00:07, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:07&lt;00:00,  2.92 url/s]
+Dl Size...:  55%|██████████████▉            | 182/328 [00:07&lt;00:05, 28.67 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:08&lt;00:00,  2.77 url/s]
-Dl Size...:  62%|████████████████▉          | 205/328 [00:08&lt;00:04, 26.61 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:07&lt;00:00,  2.92 url/s]
+Dl Size...:  56%|███████████████            | 183/328 [00:07&lt;00:05, 28.67 MiB/s]
 
-Extraction completed...: 0 file [00:08, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:08&lt;00:00,  2.77 url/s]
-Dl Size...:  63%|████████████████▉          | 206/328 [00:08&lt;00:04, 26.70 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:07&lt;00:00,  2.92 url/s]
+Dl Size...:  56%|███████████████▏           | 184/328 [00:07&lt;00:05, 28.67 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:08&lt;00:00,  2.77 url/s]
-Dl Size...:  63%|█████████████████          | 207/328 [00:08&lt;00:04, 26.70 MiB/s]
+Extraction completed...: 0 file [00:07, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:07&lt;00:00,  2.92 url/s]
+Dl Size...:  56%|███████████████▏           | 185/328 [00:07&lt;00:04, 29.04 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:08&lt;00:00,  2.77 url/s]
-Dl Size...:  63%|█████████████████          | 208/328 [00:08&lt;00:04, 26.70 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:07&lt;00:00,  2.92 url/s]
+Dl Size...:  57%|███████████████▎           | 186/328 [00:07&lt;00:04, 29.04 MiB/s]
 
-Extraction completed...: 0 file [00:08, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:08&lt;00:00,  2.77 url/s]
-Dl Size...:  64%|█████████████████▏         | 209/328 [00:08&lt;00:04, 26.83 MiB/s]
-
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:08&lt;00:00,  2.77 url/s]
-Dl Size...:  64%|█████████████████▎         | 210/328 [00:08&lt;00:04, 26.83 MiB/s]
-
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:08&lt;00:00,  2.77 url/s]
-Dl Size...:  64%|█████████████████▎         | 211/328 [00:08&lt;00:04, 26.83 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:08&lt;00:00,  2.92 url/s]
+Dl Size...:  57%|███████████████▍           | 187/328 [00:08&lt;00:04, 29.04 MiB/s]
 
 Extraction completed...: 0 file [00:08, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:08&lt;00:00,  2.77 url/s]
-Dl Size...:  65%|█████████████████▍         | 212/328 [00:08&lt;00:04, 26.80 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:08&lt;00:00,  2.92 url/s]
+Dl Size...:  57%|███████████████▍           | 188/328 [00:08&lt;00:04, 28.97 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:08&lt;00:00,  2.77 url/s]
-Dl Size...:  65%|█████████████████▌         | 213/328 [00:08&lt;00:04, 26.80 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:08&lt;00:00,  2.92 url/s]
+Dl Size...:  58%|███████████████▌           | 189/328 [00:08&lt;00:04, 28.97 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:08&lt;00:00,  2.77 url/s]
-Dl Size...:  65%|█████████████████▌         | 214/328 [00:08&lt;00:04, 26.80 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:08&lt;00:00,  2.92 url/s]
+Dl Size...:  58%|███████████████▋           | 190/328 [00:08&lt;00:04, 28.97 MiB/s]
 
 Extraction completed...: 0 file [00:08, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:09&lt;00:00,  2.77 url/s]
-Dl Size...:  66%|█████████████████▋         | 215/328 [00:09&lt;00:04, 26.69 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:08&lt;00:00,  2.92 url/s]
+Dl Size...:  58%|███████████████▋           | 191/328 [00:08&lt;00:04, 28.84 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:09&lt;00:00,  2.77 url/s]
-Dl Size...:  66%|█████████████████▊         | 216/328 [00:09&lt;00:04, 26.69 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:08&lt;00:00,  2.92 url/s]
+Dl Size...:  59%|███████████████▊           | 192/328 [00:08&lt;00:04, 28.84 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:09&lt;00:00,  2.77 url/s]
-Dl Size...:  66%|█████████████████▊         | 217/328 [00:09&lt;00:04, 26.69 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:08&lt;00:00,  2.92 url/s]
+Dl Size...:  59%|███████████████▉           | 193/328 [00:08&lt;00:04, 28.84 MiB/s]
+
+Extraction completed...: 0 file [00:08, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:08&lt;00:00,  2.92 url/s]
+Dl Size...:  59%|███████████████▉           | 194/328 [00:08&lt;00:04, 28.96 MiB/s]
+
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:08&lt;00:00,  2.92 url/s]
+Dl Size...:  59%|████████████████           | 195/328 [00:08&lt;00:04, 28.96 MiB/s]
+
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:08&lt;00:00,  2.92 url/s]
+Dl Size...:  60%|████████████████▏          | 196/328 [00:08&lt;00:04, 28.96 MiB/s]
+
+Extraction completed...: 0 file [00:08, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:08&lt;00:00,  2.92 url/s]
+Dl Size...:  60%|████████████████▏          | 197/328 [00:08&lt;00:04, 28.93 MiB/s]
+
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:08&lt;00:00,  2.92 url/s]
+Dl Size...:  60%|████████████████▎          | 198/328 [00:08&lt;00:04, 28.93 MiB/s]
+
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:08&lt;00:00,  2.92 url/s]
+Dl Size...:  61%|████████████████▍          | 199/328 [00:08&lt;00:04, 28.93 MiB/s]
+
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:08&lt;00:00,  2.92 url/s]
+Dl Size...:  61%|████████████████▍          | 200/328 [00:08&lt;00:04, 28.93 MiB/s]
+
+Extraction completed...: 0 file [00:08, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:08&lt;00:00,  2.92 url/s]
+Dl Size...:  61%|████████████████▌          | 201/328 [00:08&lt;00:04, 29.41 MiB/s]
+
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:08&lt;00:00,  2.92 url/s]
+Dl Size...:  62%|████████████████▋          | 202/328 [00:08&lt;00:04, 29.41 MiB/s]
+
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:08&lt;00:00,  2.92 url/s]
+Dl Size...:  62%|████████████████▋          | 203/328 [00:08&lt;00:04, 29.41 MiB/s]
+
+Extraction completed...: 0 file [00:08, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:08&lt;00:00,  2.92 url/s]
+Dl Size...:  62%|████████████████▊          | 204/328 [00:08&lt;00:04, 29.18 MiB/s]
+
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:08&lt;00:00,  2.92 url/s]
+Dl Size...:  62%|████████████████▉          | 205/328 [00:08&lt;00:04, 29.18 MiB/s]
+
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:08&lt;00:00,  2.92 url/s]
+Dl Size...:  63%|████████████████▉          | 206/328 [00:08&lt;00:04, 29.18 MiB/s]
+
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:08&lt;00:00,  2.92 url/s]
+Dl Size...:  63%|█████████████████          | 207/328 [00:08&lt;00:04, 29.18 MiB/s]
+
+Extraction completed...: 0 file [00:08, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:08&lt;00:00,  2.92 url/s]
+Dl Size...:  63%|█████████████████          | 208/328 [00:08&lt;00:04, 27.89 MiB/s]
+
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:08&lt;00:00,  2.92 url/s]
+Dl Size...:  64%|█████████████████▏         | 209/328 [00:08&lt;00:04, 27.89 MiB/s]
+
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:08&lt;00:00,  2.92 url/s]
+Dl Size...:  64%|█████████████████▎         | 210/328 [00:08&lt;00:04, 27.89 MiB/s]
+
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:08&lt;00:00,  2.92 url/s]
+Dl Size...:  64%|█████████████████▎         | 211/328 [00:08&lt;00:04, 27.89 MiB/s]
+
+Extraction completed...: 0 file [00:08, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:08&lt;00:00,  2.92 url/s]
+Dl Size...:  65%|█████████████████▍         | 212/328 [00:08&lt;00:03, 29.41 MiB/s]
+
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:08&lt;00:00,  2.92 url/s]
+Dl Size...:  65%|█████████████████▌         | 213/328 [00:08&lt;00:03, 29.41 MiB/s]
+
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:08&lt;00:00,  2.92 url/s]
+Dl Size...:  65%|█████████████████▌         | 214/328 [00:08&lt;00:03, 29.41 MiB/s]
+
+Extraction completed...: 0 file [00:08, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:09&lt;00:00,  2.92 url/s]
+Dl Size...:  66%|█████████████████▋         | 215/328 [00:09&lt;00:03, 29.27 MiB/s]
+
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:09&lt;00:00,  2.92 url/s]
+Dl Size...:  66%|█████████████████▊         | 216/328 [00:09&lt;00:03, 29.27 MiB/s]
+
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:09&lt;00:00,  2.92 url/s]
+Dl Size...:  66%|█████████████████▊         | 217/328 [00:09&lt;00:03, 29.27 MiB/s]
 
 Extraction completed...: 0 file [00:09, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:09&lt;00:00,  2.77 url/s]
-Dl Size...:  66%|█████████████████▉         | 218/328 [00:09&lt;00:04, 26.61 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:09&lt;00:00,  2.92 url/s]
+Dl Size...:  66%|█████████████████▉         | 218/328 [00:09&lt;00:03, 29.26 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:09&lt;00:00,  2.77 url/s]
-Dl Size...:  67%|██████████████████         | 219/328 [00:09&lt;00:04, 26.61 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:09&lt;00:00,  2.92 url/s]
+Dl Size...:  67%|██████████████████         | 219/328 [00:09&lt;00:03, 29.26 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:09&lt;00:00,  2.77 url/s]
-Dl Size...:  67%|██████████████████         | 220/328 [00:09&lt;00:04, 26.61 MiB/s]
-
-Extraction completed...: 0 file [00:09, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:09&lt;00:00,  2.77 url/s]
-Dl Size...:  67%|██████████████████▏        | 221/328 [00:09&lt;00:04, 26.65 MiB/s]
-
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:09&lt;00:00,  2.77 url/s]
-Dl Size...:  68%|██████████████████▎        | 222/328 [00:09&lt;00:03, 26.65 MiB/s]
-
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:09&lt;00:00,  2.77 url/s]
-Dl Size...:  68%|██████████████████▎        | 223/328 [00:09&lt;00:03, 26.65 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:09&lt;00:00,  2.92 url/s]
+Dl Size...:  67%|██████████████████         | 220/328 [00:09&lt;00:03, 29.26 MiB/s]
 
 Extraction completed...: 0 file [00:09, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:09&lt;00:00,  2.77 url/s]
-Dl Size...:  68%|██████████████████▍        | 224/328 [00:09&lt;00:03, 26.22 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:09&lt;00:00,  2.92 url/s]
+Dl Size...:  67%|██████████████████▏        | 221/328 [00:09&lt;00:03, 29.21 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:09&lt;00:00,  2.77 url/s]
-Dl Size...:  69%|██████████████████▌        | 225/328 [00:09&lt;00:03, 26.22 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:09&lt;00:00,  2.92 url/s]
+Dl Size...:  68%|██████████████████▎        | 222/328 [00:09&lt;00:03, 29.21 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:09&lt;00:00,  2.77 url/s]
-Dl Size...:  69%|██████████████████▌        | 226/328 [00:09&lt;00:03, 26.22 MiB/s]
-
-Extraction completed...: 0 file [00:09, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:09&lt;00:00,  2.77 url/s]
-Dl Size...:  69%|██████████████████▋        | 227/328 [00:09&lt;00:03, 26.52 MiB/s]
-
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:09&lt;00:00,  2.77 url/s]
-Dl Size...:  70%|██████████████████▊        | 228/328 [00:09&lt;00:03, 26.52 MiB/s]
-
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:09&lt;00:00,  2.77 url/s]
-Dl Size...:  70%|██████████████████▊        | 229/328 [00:09&lt;00:03, 26.52 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:09&lt;00:00,  2.92 url/s]
+Dl Size...:  68%|██████████████████▎        | 223/328 [00:09&lt;00:03, 29.21 MiB/s]
 
 Extraction completed...: 0 file [00:09, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:09&lt;00:00,  2.77 url/s]
-Dl Size...:  70%|██████████████████▉        | 230/328 [00:09&lt;00:03, 26.58 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:09&lt;00:00,  2.92 url/s]
+Dl Size...:  68%|██████████████████▍        | 224/328 [00:09&lt;00:03, 29.40 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:09&lt;00:00,  2.77 url/s]
-Dl Size...:  70%|███████████████████        | 231/328 [00:09&lt;00:03, 26.58 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:09&lt;00:00,  2.92 url/s]
+Dl Size...:  69%|██████████████████▌        | 225/328 [00:09&lt;00:03, 29.40 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:09&lt;00:00,  2.77 url/s]
-Dl Size...:  71%|███████████████████        | 232/328 [00:09&lt;00:03, 26.58 MiB/s]
-
-Extraction completed...: 0 file [00:09, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:09&lt;00:00,  2.77 url/s]
-Dl Size...:  71%|███████████████████▏       | 233/328 [00:09&lt;00:03, 26.36 MiB/s]
-
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:09&lt;00:00,  2.77 url/s]
-Dl Size...:  71%|███████████████████▎       | 234/328 [00:09&lt;00:03, 26.36 MiB/s]
-
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:09&lt;00:00,  2.77 url/s]
-Dl Size...:  72%|███████████████████▎       | 235/328 [00:09&lt;00:03, 26.36 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:09&lt;00:00,  2.92 url/s]
+Dl Size...:  69%|██████████████████▌        | 226/328 [00:09&lt;00:03, 29.40 MiB/s]
 
 Extraction completed...: 0 file [00:09, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:09&lt;00:00,  2.77 url/s]
-Dl Size...:  72%|███████████████████▍       | 236/328 [00:09&lt;00:03, 26.18 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:09&lt;00:00,  2.92 url/s]
+Dl Size...:  69%|██████████████████▋        | 227/328 [00:09&lt;00:03, 29.53 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:09&lt;00:00,  2.77 url/s]
-Dl Size...:  72%|███████████████████▌       | 237/328 [00:09&lt;00:03, 26.18 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:09&lt;00:00,  2.92 url/s]
+Dl Size...:  70%|██████████████████▊        | 228/328 [00:09&lt;00:03, 29.53 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:09&lt;00:00,  2.77 url/s]
-Dl Size...:  73%|███████████████████▌       | 238/328 [00:09&lt;00:03, 26.18 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:09&lt;00:00,  2.92 url/s]
+Dl Size...:  70%|██████████████████▊        | 229/328 [00:09&lt;00:03, 29.53 MiB/s]
 
 Extraction completed...: 0 file [00:09, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:09&lt;00:00,  2.77 url/s]
-Dl Size...:  73%|███████████████████▋       | 239/328 [00:09&lt;00:03, 26.17 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:09&lt;00:00,  2.92 url/s]
+Dl Size...:  70%|██████████████████▉        | 230/328 [00:09&lt;00:03, 28.12 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:09&lt;00:00,  2.77 url/s]
-Dl Size...:  73%|███████████████████▊       | 240/328 [00:09&lt;00:03, 26.17 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:09&lt;00:00,  2.92 url/s]
+Dl Size...:  70%|███████████████████        | 231/328 [00:09&lt;00:03, 28.12 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:10&lt;00:00,  2.77 url/s]
-Dl Size...:  73%|███████████████████▊       | 241/328 [00:10&lt;00:03, 26.17 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:09&lt;00:00,  2.92 url/s]
+Dl Size...:  71%|███████████████████        | 232/328 [00:09&lt;00:03, 28.12 MiB/s]
 
-Extraction completed...: 0 file [00:10, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:10&lt;00:00,  2.77 url/s]
-Dl Size...:  74%|███████████████████▉       | 242/328 [00:10&lt;00:03, 26.25 MiB/s]
+Extraction completed...: 0 file [00:09, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:09&lt;00:00,  2.92 url/s]
+Dl Size...:  71%|███████████████████▏       | 233/328 [00:09&lt;00:03, 28.27 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:10&lt;00:00,  2.77 url/s]
-Dl Size...:  74%|████████████████████       | 243/328 [00:10&lt;00:03, 26.25 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:09&lt;00:00,  2.92 url/s]
+Dl Size...:  71%|███████████████████▎       | 234/328 [00:09&lt;00:03, 28.27 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:10&lt;00:00,  2.77 url/s]
-Dl Size...:  74%|████████████████████       | 244/328 [00:10&lt;00:03, 26.25 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:09&lt;00:00,  2.92 url/s]
+Dl Size...:  72%|███████████████████▎       | 235/328 [00:09&lt;00:03, 28.27 MiB/s]
 
-Extraction completed...: 0 file [00:10, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:10&lt;00:00,  2.77 url/s]
-Dl Size...:  75%|████████████████████▏      | 245/328 [00:10&lt;00:03, 26.09 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:09&lt;00:00,  2.92 url/s]
+Dl Size...:  72%|███████████████████▍       | 236/328 [00:09&lt;00:03, 28.27 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:10&lt;00:00,  2.77 url/s]
-Dl Size...:  75%|████████████████████▎      | 246/328 [00:10&lt;00:03, 26.09 MiB/s]
+Extraction completed...: 0 file [00:09, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:09&lt;00:00,  2.92 url/s]
+Dl Size...:  72%|███████████████████▌       | 237/328 [00:09&lt;00:03, 27.50 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:10&lt;00:00,  2.77 url/s]
-Dl Size...:  75%|████████████████████▎      | 247/328 [00:10&lt;00:03, 26.09 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:09&lt;00:00,  2.92 url/s]
+Dl Size...:  73%|███████████████████▌       | 238/328 [00:09&lt;00:03, 27.50 MiB/s]
 
-Extraction completed...: 0 file [00:10, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:10&lt;00:00,  2.77 url/s]
-Dl Size...:  76%|████████████████████▍      | 248/328 [00:10&lt;00:03, 26.07 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:09&lt;00:00,  2.92 url/s]
+Dl Size...:  73%|███████████████████▋       | 239/328 [00:09&lt;00:03, 27.50 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:10&lt;00:00,  2.77 url/s]
-Dl Size...:  76%|████████████████████▍      | 249/328 [00:10&lt;00:03, 26.07 MiB/s]
+Extraction completed...: 0 file [00:09, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:09&lt;00:00,  2.92 url/s]
+Dl Size...:  73%|███████████████████▊       | 240/328 [00:09&lt;00:03, 27.82 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:10&lt;00:00,  2.77 url/s]
-Dl Size...:  76%|████████████████████▌      | 250/328 [00:10&lt;00:02, 26.07 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:09&lt;00:00,  2.92 url/s]
+Dl Size...:  73%|███████████████████▊       | 241/328 [00:09&lt;00:03, 27.82 MiB/s]
 
-Extraction completed...: 0 file [00:10, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:10&lt;00:00,  2.77 url/s]
-Dl Size...:  77%|████████████████████▋      | 251/328 [00:10&lt;00:02, 26.12 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:09&lt;00:00,  2.92 url/s]
+Dl Size...:  74%|███████████████████▉       | 242/328 [00:09&lt;00:03, 27.82 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:10&lt;00:00,  2.77 url/s]
-Dl Size...:  77%|████████████████████▋      | 252/328 [00:10&lt;00:02, 26.12 MiB/s]
+Extraction completed...: 0 file [00:09, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:09&lt;00:00,  2.92 url/s]
+Dl Size...:  74%|████████████████████       | 243/328 [00:09&lt;00:03, 28.27 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:10&lt;00:00,  2.77 url/s]
-Dl Size...:  77%|████████████████████▊      | 253/328 [00:10&lt;00:02, 26.12 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:10&lt;00:00,  2.92 url/s]
+Dl Size...:  74%|████████████████████       | 244/328 [00:10&lt;00:02, 28.27 MiB/s]
 
-Extraction completed...: 0 file [00:10, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:10&lt;00:00,  2.77 url/s]
-Dl Size...:  77%|████████████████████▉      | 254/328 [00:10&lt;00:02, 26.19 MiB/s]
-
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:10&lt;00:00,  2.77 url/s]
-Dl Size...:  78%|████████████████████▉      | 255/328 [00:10&lt;00:02, 26.19 MiB/s]
-
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:10&lt;00:00,  2.77 url/s]
-Dl Size...:  78%|█████████████████████      | 256/328 [00:10&lt;00:02, 26.19 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:10&lt;00:00,  2.92 url/s]
+Dl Size...:  75%|████████████████████▏      | 245/328 [00:10&lt;00:02, 28.27 MiB/s]
 
 Extraction completed...: 0 file [00:10, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:10&lt;00:00,  2.77 url/s]
-Dl Size...:  78%|█████████████████████▏     | 257/328 [00:10&lt;00:02, 26.09 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:10&lt;00:00,  2.92 url/s]
+Dl Size...:  75%|████████████████████▎      | 246/328 [00:10&lt;00:02, 28.63 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:10&lt;00:00,  2.77 url/s]
-Dl Size...:  79%|█████████████████████▏     | 258/328 [00:10&lt;00:02, 26.09 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:10&lt;00:00,  2.92 url/s]
+Dl Size...:  75%|████████████████████▎      | 247/328 [00:10&lt;00:02, 28.63 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:10&lt;00:00,  2.77 url/s]
-Dl Size...:  79%|█████████████████████▎     | 259/328 [00:10&lt;00:02, 26.09 MiB/s]
-
-Extraction completed...: 0 file [00:10, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:10&lt;00:00,  2.77 url/s]
-Dl Size...:  79%|█████████████████████▍     | 260/328 [00:10&lt;00:02, 26.73 MiB/s]
-
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:10&lt;00:00,  2.77 url/s]
-Dl Size...:  80%|█████████████████████▍     | 261/328 [00:10&lt;00:02, 26.73 MiB/s]
-
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:10&lt;00:00,  2.77 url/s]
-Dl Size...:  80%|█████████████████████▌     | 262/328 [00:10&lt;00:02, 26.73 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:10&lt;00:00,  2.92 url/s]
+Dl Size...:  76%|████████████████████▍      | 248/328 [00:10&lt;00:02, 28.63 MiB/s]
 
 Extraction completed...: 0 file [00:10, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:10&lt;00:00,  2.77 url/s]
-Dl Size...:  80%|█████████████████████▋     | 263/328 [00:10&lt;00:02, 26.11 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:10&lt;00:00,  2.92 url/s]
+Dl Size...:  76%|████████████████████▍      | 249/328 [00:10&lt;00:02, 28.77 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:10&lt;00:00,  2.77 url/s]
-Dl Size...:  80%|█████████████████████▋     | 264/328 [00:10&lt;00:02, 26.11 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:10&lt;00:00,  2.92 url/s]
+Dl Size...:  76%|████████████████████▌      | 250/328 [00:10&lt;00:02, 28.77 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:10&lt;00:00,  2.77 url/s]
-Dl Size...:  81%|█████████████████████▊     | 265/328 [00:10&lt;00:02, 26.11 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:10&lt;00:00,  2.92 url/s]
+Dl Size...:  77%|████████████████████▋      | 251/328 [00:10&lt;00:02, 28.77 MiB/s]
 
 Extraction completed...: 0 file [00:10, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:10&lt;00:00,  2.77 url/s]
-Dl Size...:  81%|█████████████████████▉     | 266/328 [00:10&lt;00:02, 26.28 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:10&lt;00:00,  2.92 url/s]
+Dl Size...:  77%|████████████████████▋      | 252/328 [00:10&lt;00:02, 28.94 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:10&lt;00:00,  2.77 url/s]
-Dl Size...:  81%|█████████████████████▉     | 267/328 [00:10&lt;00:02, 26.28 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:10&lt;00:00,  2.92 url/s]
+Dl Size...:  77%|████████████████████▊      | 253/328 [00:10&lt;00:02, 28.94 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:11&lt;00:00,  2.77 url/s]
-Dl Size...:  82%|██████████████████████     | 268/328 [00:11&lt;00:02, 26.28 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:10&lt;00:00,  2.92 url/s]
+Dl Size...:  77%|████████████████████▉      | 254/328 [00:10&lt;00:02, 28.94 MiB/s]
 
-Extraction completed...: 0 file [00:11, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:11&lt;00:00,  2.77 url/s]
-Dl Size...:  82%|██████████████████████▏    | 269/328 [00:11&lt;00:02, 26.40 MiB/s]
+Extraction completed...: 0 file [00:10, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:10&lt;00:00,  2.92 url/s]
+Dl Size...:  78%|████████████████████▉      | 255/328 [00:10&lt;00:02, 28.73 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:11&lt;00:00,  2.77 url/s]
-Dl Size...:  82%|██████████████████████▏    | 270/328 [00:11&lt;00:02, 26.40 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:10&lt;00:00,  2.92 url/s]
+Dl Size...:  78%|█████████████████████      | 256/328 [00:10&lt;00:02, 28.73 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:11&lt;00:00,  2.77 url/s]
-Dl Size...:  83%|██████████████████████▎    | 271/328 [00:11&lt;00:02, 26.40 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:10&lt;00:00,  2.92 url/s]
+Dl Size...:  78%|█████████████████████▏     | 257/328 [00:10&lt;00:02, 28.73 MiB/s]
 
-Extraction completed...: 0 file [00:11, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:11&lt;00:00,  2.77 url/s]
-Dl Size...:  83%|██████████████████████▍    | 272/328 [00:11&lt;00:02, 25.83 MiB/s]
+Extraction completed...: 0 file [00:10, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:10&lt;00:00,  2.92 url/s]
+Dl Size...:  79%|█████████████████████▏     | 258/328 [00:10&lt;00:02, 28.83 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:11&lt;00:00,  2.77 url/s]
-Dl Size...:  83%|██████████████████████▍    | 273/328 [00:11&lt;00:02, 25.83 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:10&lt;00:00,  2.92 url/s]
+Dl Size...:  79%|█████████████████████▎     | 259/328 [00:10&lt;00:02, 28.83 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:11&lt;00:00,  2.77 url/s]
-Dl Size...:  84%|██████████████████████▌    | 274/328 [00:11&lt;00:02, 25.83 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:10&lt;00:00,  2.92 url/s]
+Dl Size...:  79%|█████████████████████▍     | 260/328 [00:10&lt;00:02, 28.83 MiB/s]
 
-Extraction completed...: 0 file [00:11, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:11&lt;00:00,  2.77 url/s]
-Dl Size...:  84%|██████████████████████▋    | 275/328 [00:11&lt;00:02, 26.16 MiB/s]
+Extraction completed...: 0 file [00:10, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:10&lt;00:00,  2.92 url/s]
+Dl Size...:  80%|█████████████████████▍     | 261/328 [00:10&lt;00:02, 29.11 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:11&lt;00:00,  2.77 url/s]
-Dl Size...:  84%|██████████████████████▋    | 276/328 [00:11&lt;00:01, 26.16 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:10&lt;00:00,  2.92 url/s]
+Dl Size...:  80%|█████████████████████▌     | 262/328 [00:10&lt;00:02, 29.11 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:11&lt;00:00,  2.77 url/s]
-Dl Size...:  84%|██████████████████████▊    | 277/328 [00:11&lt;00:01, 26.16 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:10&lt;00:00,  2.92 url/s]
+Dl Size...:  80%|█████████████████████▋     | 263/328 [00:10&lt;00:02, 29.11 MiB/s]
 
-Extraction completed...: 0 file [00:11, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:11&lt;00:00,  2.77 url/s]
-Dl Size...:  85%|██████████████████████▉    | 278/328 [00:11&lt;00:01, 26.27 MiB/s]
+Extraction completed...: 0 file [00:10, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:10&lt;00:00,  2.92 url/s]
+Dl Size...:  80%|█████████████████████▋     | 264/328 [00:10&lt;00:02, 29.08 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:11&lt;00:00,  2.77 url/s]
-Dl Size...:  85%|██████████████████████▉    | 279/328 [00:11&lt;00:01, 26.27 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:10&lt;00:00,  2.92 url/s]
+Dl Size...:  81%|█████████████████████▊     | 265/328 [00:10&lt;00:02, 29.08 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:11&lt;00:00,  2.77 url/s]
-Dl Size...:  85%|███████████████████████    | 280/328 [00:11&lt;00:01, 26.27 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:10&lt;00:00,  2.92 url/s]
+Dl Size...:  81%|█████████████████████▉     | 266/328 [00:10&lt;00:02, 29.08 MiB/s]
 
-Extraction completed...: 0 file [00:11, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:11&lt;00:00,  2.77 url/s]
-Dl Size...:  86%|███████████████████████▏   | 281/328 [00:11&lt;00:01, 26.17 MiB/s]
+Extraction completed...: 0 file [00:10, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:10&lt;00:00,  2.92 url/s]
+Dl Size...:  81%|█████████████████████▉     | 267/328 [00:10&lt;00:02, 29.23 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:11&lt;00:00,  2.77 url/s]
-Dl Size...:  86%|███████████████████████▏   | 282/328 [00:11&lt;00:01, 26.17 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:10&lt;00:00,  2.92 url/s]
+Dl Size...:  82%|██████████████████████     | 268/328 [00:10&lt;00:02, 29.23 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:11&lt;00:00,  2.77 url/s]
-Dl Size...:  86%|███████████████████████▎   | 283/328 [00:11&lt;00:01, 26.17 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:10&lt;00:00,  2.92 url/s]
+Dl Size...:  82%|██████████████████████▏    | 269/328 [00:10&lt;00:02, 29.23 MiB/s]
 
-Extraction completed...: 0 file [00:11, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:11&lt;00:00,  2.77 url/s]
-Dl Size...:  87%|███████████████████████▍   | 284/328 [00:11&lt;00:01, 26.13 MiB/s]
+Extraction completed...: 0 file [00:10, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:10&lt;00:00,  2.92 url/s]
+Dl Size...:  82%|██████████████████████▏    | 270/328 [00:10&lt;00:01, 29.39 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:11&lt;00:00,  2.77 url/s]
-Dl Size...:  87%|███████████████████████▍   | 285/328 [00:11&lt;00:01, 26.13 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:10&lt;00:00,  2.92 url/s]
+Dl Size...:  83%|██████████████████████▎    | 271/328 [00:10&lt;00:01, 29.39 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:11&lt;00:00,  2.77 url/s]
-Dl Size...:  87%|███████████████████████▌   | 286/328 [00:11&lt;00:01, 26.13 MiB/s]
-
-Extraction completed...: 0 file [00:11, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:11&lt;00:00,  2.77 url/s]
-Dl Size...:  88%|███████████████████████▋   | 287/328 [00:11&lt;00:01, 25.96 MiB/s]
-
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:11&lt;00:00,  2.77 url/s]
-Dl Size...:  88%|███████████████████████▋   | 288/328 [00:11&lt;00:01, 25.96 MiB/s]
-
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:11&lt;00:00,  2.77 url/s]
-Dl Size...:  88%|███████████████████████▊   | 289/328 [00:11&lt;00:01, 25.96 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:11&lt;00:00,  2.92 url/s]
+Dl Size...:  83%|██████████████████████▍    | 272/328 [00:11&lt;00:01, 29.39 MiB/s]
 
 Extraction completed...: 0 file [00:11, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:11&lt;00:00,  2.77 url/s]
-Dl Size...:  88%|███████████████████████▊   | 290/328 [00:11&lt;00:01, 26.22 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:11&lt;00:00,  2.92 url/s]
+Dl Size...:  83%|██████████████████████▍    | 273/328 [00:11&lt;00:01, 29.07 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:11&lt;00:00,  2.77 url/s]
-Dl Size...:  89%|███████████████████████▉   | 291/328 [00:11&lt;00:01, 26.22 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:11&lt;00:00,  2.92 url/s]
+Dl Size...:  84%|██████████████████████▌    | 274/328 [00:11&lt;00:01, 29.07 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:11&lt;00:00,  2.77 url/s]
-Dl Size...:  89%|████████████████████████   | 292/328 [00:11&lt;00:01, 26.22 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:11&lt;00:00,  2.92 url/s]
+Dl Size...:  84%|██████████████████████▋    | 275/328 [00:11&lt;00:01, 29.07 MiB/s]
 
 Extraction completed...: 0 file [00:11, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:11&lt;00:00,  2.77 url/s]
-Dl Size...:  89%|████████████████████████   | 293/328 [00:11&lt;00:01, 26.01 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:11&lt;00:00,  2.92 url/s]
+Dl Size...:  84%|██████████████████████▋    | 276/328 [00:11&lt;00:01, 28.80 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:12&lt;00:00,  2.77 url/s]
-Dl Size...:  90%|████████████████████████▏  | 294/328 [00:12&lt;00:01, 26.01 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:11&lt;00:00,  2.92 url/s]
+Dl Size...:  84%|██████████████████████▊    | 277/328 [00:11&lt;00:01, 28.80 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:12&lt;00:00,  2.77 url/s]
-Dl Size...:  90%|████████████████████████▎  | 295/328 [00:12&lt;00:01, 26.01 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:11&lt;00:00,  2.92 url/s]
+Dl Size...:  85%|██████████████████████▉    | 278/328 [00:11&lt;00:01, 28.80 MiB/s]
+
+Extraction completed...: 0 file [00:11, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:11&lt;00:00,  2.92 url/s]
+Dl Size...:  85%|██████████████████████▉    | 279/328 [00:11&lt;00:01, 29.09 MiB/s]
+
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:11&lt;00:00,  2.92 url/s]
+Dl Size...:  85%|███████████████████████    | 280/328 [00:11&lt;00:01, 29.09 MiB/s]
+
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:11&lt;00:00,  2.92 url/s]
+Dl Size...:  86%|███████████████████████▏   | 281/328 [00:11&lt;00:01, 29.09 MiB/s]
+
+Extraction completed...: 0 file [00:11, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:11&lt;00:00,  2.92 url/s]
+Dl Size...:  86%|███████████████████████▏   | 282/328 [00:11&lt;00:01, 29.03 MiB/s]
+
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:11&lt;00:00,  2.92 url/s]
+Dl Size...:  86%|███████████████████████▎   | 283/328 [00:11&lt;00:01, 29.03 MiB/s]
+
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:11&lt;00:00,  2.92 url/s]
+Dl Size...:  87%|███████████████████████▍   | 284/328 [00:11&lt;00:01, 29.03 MiB/s]
+
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:11&lt;00:00,  2.92 url/s]
+Dl Size...:  87%|███████████████████████▍   | 285/328 [00:11&lt;00:01, 29.03 MiB/s]
+
+Extraction completed...: 0 file [00:11, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:11&lt;00:00,  2.92 url/s]
+Dl Size...:  87%|███████████████████████▌   | 286/328 [00:11&lt;00:01, 28.09 MiB/s]
+
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:11&lt;00:00,  2.92 url/s]
+Dl Size...:  88%|███████████████████████▋   | 287/328 [00:11&lt;00:01, 28.09 MiB/s]
+
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:11&lt;00:00,  2.92 url/s]
+Dl Size...:  88%|███████████████████████▋   | 288/328 [00:11&lt;00:01, 28.09 MiB/s]
+
+Extraction completed...: 0 file [00:11, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:11&lt;00:00,  2.92 url/s]
+Dl Size...:  88%|███████████████████████▊   | 289/328 [00:11&lt;00:01, 28.57 MiB/s]
+
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:11&lt;00:00,  2.92 url/s]
+Dl Size...:  88%|███████████████████████▊   | 290/328 [00:11&lt;00:01, 28.57 MiB/s]
+
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:11&lt;00:00,  2.92 url/s]
+Dl Size...:  89%|███████████████████████▉   | 291/328 [00:11&lt;00:01, 28.57 MiB/s]
+
+Extraction completed...: 0 file [00:11, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:11&lt;00:00,  2.92 url/s]
+Dl Size...:  89%|████████████████████████   | 292/328 [00:11&lt;00:01, 27.98 MiB/s]
+
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:11&lt;00:00,  2.92 url/s]
+Dl Size...:  89%|████████████████████████   | 293/328 [00:11&lt;00:01, 27.98 MiB/s]
+
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:11&lt;00:00,  2.92 url/s]
+Dl Size...:  90%|████████████████████████▏  | 294/328 [00:11&lt;00:01, 27.98 MiB/s]
+
+Extraction completed...: 0 file [00:11, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:11&lt;00:00,  2.92 url/s]
+Dl Size...:  90%|████████████████████████▎  | 295/328 [00:11&lt;00:01, 28.39 MiB/s]
+
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:11&lt;00:00,  2.92 url/s]
+Dl Size...:  90%|████████████████████████▎  | 296/328 [00:11&lt;00:01, 28.39 MiB/s]
+
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:11&lt;00:00,  2.92 url/s]
+Dl Size...:  91%|████████████████████████▍  | 297/328 [00:11&lt;00:01, 28.39 MiB/s]
+
+Extraction completed...: 0 file [00:11, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:11&lt;00:00,  2.92 url/s]
+Dl Size...:  91%|████████████████████████▌  | 298/328 [00:11&lt;00:01, 28.39 MiB/s]
+
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:11&lt;00:00,  2.92 url/s]
+Dl Size...:  91%|████████████████████████▌  | 299/328 [00:11&lt;00:01, 28.39 MiB/s]
+
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:11&lt;00:00,  2.92 url/s]
+Dl Size...:  91%|████████████████████████▋  | 300/328 [00:11&lt;00:00, 28.39 MiB/s]
+
+Extraction completed...: 0 file [00:11, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:12&lt;00:00,  2.92 url/s]
+Dl Size...:  92%|████████████████████████▊  | 301/328 [00:12&lt;00:00, 28.69 MiB/s]
+
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:12&lt;00:00,  2.92 url/s]
+Dl Size...:  92%|████████████████████████▊  | 302/328 [00:12&lt;00:00, 28.69 MiB/s]
+
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:12&lt;00:00,  2.92 url/s]
+Dl Size...:  92%|████████████████████████▉  | 303/328 [00:12&lt;00:00, 28.69 MiB/s]
 
 Extraction completed...: 0 file [00:12, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:12&lt;00:00,  2.77 url/s]
-Dl Size...:  90%|████████████████████████▎  | 296/328 [00:12&lt;00:01, 26.27 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:12&lt;00:00,  2.92 url/s]
+Dl Size...:  93%|█████████████████████████  | 304/328 [00:12&lt;00:00, 29.00 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:12&lt;00:00,  2.77 url/s]
-Dl Size...:  91%|████████████████████████▍  | 297/328 [00:12&lt;00:01, 26.27 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:12&lt;00:00,  2.92 url/s]
+Dl Size...:  93%|█████████████████████████  | 305/328 [00:12&lt;00:00, 29.00 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:12&lt;00:00,  2.77 url/s]
-Dl Size...:  91%|████████████████████████▌  | 298/328 [00:12&lt;00:01, 26.27 MiB/s]
-
-Extraction completed...: 0 file [00:12, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:12&lt;00:00,  2.77 url/s]
-Dl Size...:  91%|████████████████████████▌  | 299/328 [00:12&lt;00:01, 26.16 MiB/s]
-
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:12&lt;00:00,  2.77 url/s]
-Dl Size...:  91%|████████████████████████▋  | 300/328 [00:12&lt;00:01, 26.16 MiB/s]
-
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:12&lt;00:00,  2.77 url/s]
-Dl Size...:  92%|████████████████████████▊  | 301/328 [00:12&lt;00:01, 26.16 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:12&lt;00:00,  2.92 url/s]
+Dl Size...:  93%|█████████████████████████▏ | 306/328 [00:12&lt;00:00, 29.00 MiB/s]
 
 Extraction completed...: 0 file [00:12, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:12&lt;00:00,  2.77 url/s]
-Dl Size...:  92%|████████████████████████▊  | 302/328 [00:12&lt;00:00, 26.11 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:12&lt;00:00,  2.92 url/s]
+Dl Size...:  94%|█████████████████████████▎ | 307/328 [00:12&lt;00:00, 28.89 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:12&lt;00:00,  2.77 url/s]
-Dl Size...:  92%|████████████████████████▉  | 303/328 [00:12&lt;00:00, 26.11 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:12&lt;00:00,  2.92 url/s]
+Dl Size...:  94%|█████████████████████████▎ | 308/328 [00:12&lt;00:00, 28.89 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:12&lt;00:00,  2.77 url/s]
-Dl Size...:  93%|█████████████████████████  | 304/328 [00:12&lt;00:00, 26.11 MiB/s]
-
-Extraction completed...: 0 file [00:12, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:12&lt;00:00,  2.77 url/s]
-Dl Size...:  93%|█████████████████████████  | 305/328 [00:12&lt;00:00, 25.91 MiB/s]
-
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:12&lt;00:00,  2.77 url/s]
-Dl Size...:  93%|█████████████████████████▏ | 306/328 [00:12&lt;00:00, 25.91 MiB/s]
-
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:12&lt;00:00,  2.77 url/s]
-Dl Size...:  94%|█████████████████████████▎ | 307/328 [00:12&lt;00:00, 25.91 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:12&lt;00:00,  2.92 url/s]
+Dl Size...:  94%|█████████████████████████▍ | 309/328 [00:12&lt;00:00, 28.89 MiB/s]
 
 Extraction completed...: 0 file [00:12, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:12&lt;00:00,  2.77 url/s]
-Dl Size...:  94%|█████████████████████████▎ | 308/328 [00:12&lt;00:00, 25.96 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:12&lt;00:00,  2.92 url/s]
+Dl Size...:  95%|█████████████████████████▌ | 310/328 [00:12&lt;00:00, 28.87 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:12&lt;00:00,  2.77 url/s]
-Dl Size...:  94%|█████████████████████████▍ | 309/328 [00:12&lt;00:00, 25.96 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:12&lt;00:00,  2.92 url/s]
+Dl Size...:  95%|█████████████████████████▌ | 311/328 [00:12&lt;00:00, 28.87 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:12&lt;00:00,  2.77 url/s]
-Dl Size...:  95%|█████████████████████████▌ | 310/328 [00:12&lt;00:00, 25.96 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:12&lt;00:00,  2.92 url/s]
+Dl Size...:  95%|█████████████████████████▋ | 312/328 [00:12&lt;00:00, 28.87 MiB/s]
 
-Extraction completed...: 0 file [00:12, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:12&lt;00:00,  2.77 url/s]
-Dl Size...:  95%|█████████████████████████▌ | 311/328 [00:12&lt;00:00, 25.83 MiB/s]
-
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:12&lt;00:00,  2.77 url/s]
-Dl Size...:  95%|█████████████████████████▋ | 312/328 [00:12&lt;00:00, 25.83 MiB/s]
-
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:12&lt;00:00,  2.77 url/s]
-Dl Size...:  95%|█████████████████████████▊ | 313/328 [00:12&lt;00:00, 25.83 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:12&lt;00:00,  2.92 url/s]
+Dl Size...:  95%|█████████████████████████▊ | 313/328 [00:12&lt;00:00, 28.87 MiB/s]
 
 Extraction completed...: 0 file [00:12, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:12&lt;00:00,  2.77 url/s]
-Dl Size...:  96%|█████████████████████████▊ | 314/328 [00:12&lt;00:00, 25.71 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:12&lt;00:00,  2.92 url/s]
+Dl Size...:  96%|█████████████████████████▊ | 314/328 [00:12&lt;00:00, 29.90 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:12&lt;00:00,  2.77 url/s]
-Dl Size...:  96%|█████████████████████████▉ | 315/328 [00:12&lt;00:00, 25.71 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:12&lt;00:00,  2.92 url/s]
+Dl Size...:  96%|█████████████████████████▉ | 315/328 [00:12&lt;00:00, 29.90 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:12&lt;00:00,  2.77 url/s]
-Dl Size...:  96%|██████████████████████████ | 316/328 [00:12&lt;00:00, 25.71 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:12&lt;00:00,  2.92 url/s]
+Dl Size...:  96%|██████████████████████████ | 316/328 [00:12&lt;00:00, 29.90 MiB/s]
 
-Extraction completed...: 0 file [00:12, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:12&lt;00:00,  2.77 url/s]
-Dl Size...:  97%|██████████████████████████ | 317/328 [00:12&lt;00:00, 25.84 MiB/s]
-
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:12&lt;00:00,  2.77 url/s]
-Dl Size...:  97%|██████████████████████████▏| 318/328 [00:12&lt;00:00, 25.84 MiB/s]
-
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:12&lt;00:00,  2.77 url/s]
-Dl Size...:  97%|██████████████████████████▎| 319/328 [00:12&lt;00:00, 25.84 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:12&lt;00:00,  2.92 url/s]
+Dl Size...:  97%|██████████████████████████ | 317/328 [00:12&lt;00:00, 29.90 MiB/s]
 
 Extraction completed...: 0 file [00:12, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:13&lt;00:00,  2.77 url/s]
-Dl Size...:  98%|██████████████████████████▎| 320/328 [00:13&lt;00:00, 25.76 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:12&lt;00:00,  2.92 url/s]
+Dl Size...:  97%|██████████████████████████▏| 318/328 [00:12&lt;00:00, 28.60 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:13&lt;00:00,  2.77 url/s]
-Dl Size...:  98%|██████████████████████████▍| 321/328 [00:13&lt;00:00, 25.76 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:12&lt;00:00,  2.92 url/s]
+Dl Size...:  97%|██████████████████████████▎| 319/328 [00:12&lt;00:00, 28.60 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:13&lt;00:00,  2.77 url/s]
-Dl Size...:  98%|██████████████████████████▌| 322/328 [00:13&lt;00:00, 25.76 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:12&lt;00:00,  2.92 url/s]
+Dl Size...:  98%|██████████████████████████▎| 320/328 [00:12&lt;00:00, 28.60 MiB/s]
 
-Extraction completed...: 0 file [00:13, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:13&lt;00:00,  2.77 url/s]
-Dl Size...:  98%|██████████████████████████▌| 323/328 [00:13&lt;00:00, 25.76 MiB/s]
+Extraction completed...: 0 file [00:12, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:12&lt;00:00,  2.92 url/s]
+Dl Size...:  98%|██████████████████████████▍| 321/328 [00:12&lt;00:00, 28.88 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:13&lt;00:00,  2.77 url/s]
-Dl Size...:  99%|██████████████████████████▋| 324/328 [00:13&lt;00:00, 25.76 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:12&lt;00:00,  2.92 url/s]
+Dl Size...:  98%|██████████████████████████▌| 322/328 [00:12&lt;00:00, 28.88 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:13&lt;00:00,  2.77 url/s]
-Dl Size...:  99%|██████████████████████████▊| 325/328 [00:13&lt;00:00, 25.76 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:12&lt;00:00,  2.92 url/s]
+Dl Size...:  98%|██████████████████████████▌| 323/328 [00:12&lt;00:00, 28.88 MiB/s]
 
-Extraction completed...: 0 file [00:13, ? file/s]
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:13&lt;00:00,  2.77 url/s]
-Dl Size...:  99%|██████████████████████████▊| 326/328 [00:13&lt;00:00, 25.90 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:12&lt;00:00,  2.92 url/s]
+Dl Size...:  99%|██████████████████████████▋| 324/328 [00:12&lt;00:00, 28.88 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:13&lt;00:00,  2.77 url/s]
-Dl Size...: 100%|██████████████████████████▉| 327/328 [00:13&lt;00:00, 25.90 MiB/s]
+Extraction completed...: 0 file [00:12, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:12&lt;00:00,  2.92 url/s]
+Dl Size...:  99%|██████████████████████████▊| 325/328 [00:12&lt;00:00, 29.23 MiB/s]
 
-Dl Completed...:  67%|█████████████████▎        | 2/3 [00:13&lt;00:00,  2.77 url/s]
-Dl Size...: 100%|███████████████████████████| 328/328 [00:13&lt;00:00, 25.90 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:12&lt;00:00,  2.92 url/s]
+Dl Size...:  99%|██████████████████████████▊| 326/328 [00:12&lt;00:00, 29.23 MiB/s]
 
-Dl Completed...: 100%|██████████████████████████| 3/3 [00:13&lt;00:00,  4.08s/ url]
-Dl Size...: 100%|███████████████████████████| 328/328 [00:13&lt;00:00, 25.90 MiB/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:12&lt;00:00,  2.92 url/s]
+Dl Size...: 100%|██████████████████████████▉| 327/328 [00:12&lt;00:00, 29.23 MiB/s]
 
-Dl Completed...: 100%|██████████████████████████| 3/3 [00:13&lt;00:00,  4.08s/ url]
-Dl Size...: 100%|███████████████████████████| 328/328 [00:13&lt;00:00, 25.90 MiB/s]
+Extraction completed...: 0 file [00:12, ? file/s]
+Dl Completed...:  67%|█████████████████▎        | 2/3 [00:12&lt;00:00,  2.92 url/s]
+Dl Size...: 100%|███████████████████████████| 328/328 [00:12&lt;00:00, 29.23 MiB/s]
 
-Extraction completed...:   0%|                         | 0/1 [00:13&lt;?, ? file/s]
+Dl Completed...: 100%|██████████████████████████| 3/3 [00:12&lt;00:00,  3.96s/ url]
+Dl Size...: 100%|███████████████████████████| 328/328 [00:12&lt;00:00, 29.23 MiB/s]
 
-Dl Completed...: 100%|██████████████████████████| 3/3 [00:19&lt;00:00,  4.08s/ url]
-Dl Size...: 100%|███████████████████████████| 328/328 [00:19&lt;00:00, 25.90 MiB/s]
+Dl Completed...: 100%|██████████████████████████| 3/3 [00:12&lt;00:00,  3.96s/ url]
+Dl Size...: 100%|███████████████████████████| 328/328 [00:12&lt;00:00, 29.23 MiB/s]
 
-Extraction completed...: 100%|█████████████████| 1/1 [00:19&lt;00:00, 19.88s/ file]
-Extraction completed...: 100%|█████████████████| 1/1 [00:19&lt;00:00, 19.88s/ file]
+Extraction completed...:   0%|                         | 0/1 [00:12&lt;?, ? file/s]
 
-Dl Size...: 100%|███████████████████████████| 328/328 [00:19&lt;00:00, 16.50 MiB/s]
+Dl Completed...: 100%|██████████████████████████| 3/3 [00:19&lt;00:00,  3.96s/ url]
+Dl Size...: 100%|███████████████████████████| 328/328 [00:19&lt;00:00, 29.23 MiB/s]
 
-Dl Completed...: 100%|██████████████████████████| 3/3 [00:19&lt;00:00,  6.63s/ url]
-I0520 18:53:20.986640 140301184534272 dataset_builder.py:946] Generating split train
-Shuffling and writing examples to /root/tensorflow_datasets/oxford_flowers102/2.1.1.incompleteB8KYFQ/oxford_flowers102-train.tfrecord
-  0%|                                           | 0/1020 [00:00&lt;?, ? examples/s]I0520 18:53:21.767898 140301184534272 tfrecords_writer.py:227] Done writing /root/tensorflow_datasets/oxford_flowers102/2.1.1.incompleteB8KYFQ/oxford_flowers102-train.tfrecord. Shard lengths: [1020]
-I0520 18:53:21.769959 140301184534272 dataset_builder.py:946] Generating split test
-Shuffling and writing examples to /root/tensorflow_datasets/oxford_flowers102/2.1.1.incompleteB8KYFQ/oxford_flowers102-test.tfrecord
- 99%|████████████████████████████▊| 6097/6149 [00:00&lt;00:00, 20199.65 examples/s]I0520 18:53:26.137705 140301184534272 tfrecords_writer.py:227] Done writing /root/tensorflow_datasets/oxford_flowers102/2.1.1.incompleteB8KYFQ/oxford_flowers102-test.tfrecord. Shard lengths: [3074, 3075]
-I0520 18:53:26.146256 140301184534272 dataset_builder.py:946] Generating split validation
-Shuffling and writing examples to /root/tensorflow_datasets/oxford_flowers102/2.1.1.incompleteB8KYFQ/oxford_flowers102-validation.tfrecord
-  0%|                                           | 0/1020 [00:00&lt;?, ? examples/s]I0520 18:53:26.857751 140301184534272 tfrecords_writer.py:227] Done writing /root/tensorflow_datasets/oxford_flowers102/2.1.1.incompleteB8KYFQ/oxford_flowers102-validation.tfrecord. Shard lengths: [1020]
-I0520 18:53:26.859749 140301184534272 dataset_builder.py:400] Skipping computing stats for mode ComputeStatsMode.AUTO.
+Extraction completed...: 100%|█████████████████| 1/1 [00:19&lt;00:00, 19.49s/ file]
+Extraction completed...: 100%|█████████████████| 1/1 [00:19&lt;00:00, 19.50s/ file]
+
+Dl Size...: 100%|███████████████████████████| 328/328 [00:19&lt;00:00, 16.82 MiB/s]
+
+Dl Completed...: 100%|██████████████████████████| 3/3 [00:19&lt;00:00,  6.50s/ url]
+I0520 21:12:03.548639 140516801754880 dataset_builder.py:946] Generating split train
+Shuffling and writing examples to /root/tensorflow_datasets/oxford_flowers102/2.1.1.incompleteV3CJGK/oxford_flowers102-train.tfrecord
+  0%|                                           | 0/1020 [00:00&lt;?, ? examples/s]I0520 21:12:04.331072 140516801754880 tfrecords_writer.py:227] Done writing /root/tensorflow_datasets/oxford_flowers102/2.1.1.incompleteV3CJGK/oxford_flowers102-train.tfrecord. Shard lengths: [1020]
+I0520 21:12:04.332010 140516801754880 dataset_builder.py:946] Generating split test
+Shuffling and writing examples to /root/tensorflow_datasets/oxford_flowers102/2.1.1.incompleteV3CJGK/oxford_flowers102-test.tfrecord
+ 93%|██████████████████████████▉  | 5710/6149 [00:00&lt;00:00, 18853.22 examples/s]I0520 21:12:08.777647 140516801754880 tfrecords_writer.py:227] Done writing /root/tensorflow_datasets/oxford_flowers102/2.1.1.incompleteV3CJGK/oxford_flowers102-test.tfrecord. Shard lengths: [3074, 3075]
+I0520 21:12:08.788936 140516801754880 dataset_builder.py:946] Generating split validation
+Shuffling and writing examples to /root/tensorflow_datasets/oxford_flowers102/2.1.1.incompleteV3CJGK/oxford_flowers102-validation.tfrecord
+  0%|                                           | 0/1020 [00:00&lt;?, ? examples/s]I0520 21:12:09.518669 140516801754880 tfrecords_writer.py:227] Done writing /root/tensorflow_datasets/oxford_flowers102/2.1.1.incompleteV3CJGK/oxford_flowers102-validation.tfrecord. Shard lengths: [1020]
+I0520 21:12:09.520332 140516801754880 dataset_builder.py:400] Skipping computing stats for mode ComputeStatsMode.AUTO.
 <span class="ansi-bold">Dataset oxford_flowers102 downloaded and prepared to /root/tensorflow_datasets/oxford_flowers102/2.1.1. Subsequent calls will reuse this data.</span>
 <span class="ansi-bold">name: &#34;oxford_flowers102&#34;
 description: &#34;The Oxford Flowers 102 dataset is a consistent of 102 flower categories commonly occurring\nin the United Kingdom. Each class consists of between 40 and 258 images. The images have\nlarge scale, pose and light variations. In addition, there are categories that have large\nvariations within the category and several very similar categories.\n\nThe dataset is divided into a training set, a validation set and a test set.\nThe training set and validation set each consist of 10 images per class (totalling 1020 images each).\nThe test set consists of the remaining 6149 images (minimum 20 per class).&#34;
@@ -16300,9 +16291,12 @@ Classes: 102
 <span class="c1">#     label = label.numpy()</span>
 <span class="c1">#     print(&#39;The images in the training set have:\n\u2022 label:&#39;, label, &#39;\n\u2022 shape:&#39;, image.shape)</span>
 
-<span class="k">for</span> <span class="n">img</span> <span class="ow">in</span> <span class="n">train_set</span><span class="o">.</span><span class="n">take</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
-    <span class="n">image</span><span class="p">,</span><span class="n">label</span><span class="p">,</span><span class="n">shape</span> <span class="o">=</span> <span class="n">img</span><span class="p">[</span><span class="s1">&#39;image&#39;</span><span class="p">],</span> <span class="n">img</span><span class="p">[</span><span class="s1">&#39;label&#39;</span><span class="p">],</span> <span class="n">img</span><span class="p">[</span><span class="s1">&#39;image&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span>
-    <span class="nb">print</span><span class="p">((</span><span class="s1">&#39;label of the image is : </span><span class="si">{0}</span><span class="s1"> and shape of the image is : </span><span class="si">{1}</span><span class="s1">&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">label</span><span class="p">,</span><span class="n">shape</span><span class="p">))</span>
+<span class="c1"># for img in train_set.take(3):</span>
+<span class="c1">#     image,label,shape = img[&#39;image&#39;], img[&#39;label&#39;], img[&#39;image&#39;].shape</span>
+<span class="c1">#     print((&#39;label of the image is : {0} and shape of the image is : {1}&#39;).format(label,shape))</span>
+
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">label</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">train_set</span><span class="o">.</span><span class="n">take</span><span class="p">(</span><span class="mi">3</span><span class="p">)):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Image </span><span class="si">{}</span><span class="s1"> has shape </span><span class="si">{}</span><span class="s1"> and label </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">image</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">label</span><span class="o">.</span><span class="n">numpy</span><span class="p">()))</span>
 </pre></div>
 
     </div>
@@ -16318,17 +16312,11 @@ Classes: 102
     <div class="prompt"></div>
 
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-10-6766a568c10a&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
-<span class="ansi-green-intense-fg ansi-bold">      6</span> 
-<span class="ansi-green-intense-fg ansi-bold">      7</span> <span class="ansi-green-fg">for</span> img <span class="ansi-green-fg">in</span> train_set<span class="ansi-blue-fg">.</span>take<span class="ansi-blue-fg">(</span><span class="ansi-cyan-fg">3</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">----&gt; 8</span><span class="ansi-red-fg">     </span>image<span class="ansi-blue-fg">,</span>label<span class="ansi-blue-fg">,</span>shape <span class="ansi-blue-fg">=</span> img<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">&#39;image&#39;</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">,</span> img<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">&#39;label&#39;</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">,</span> img<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">&#39;image&#39;</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">.</span>shape
-<span class="ansi-green-intense-fg ansi-bold">      9</span>     print<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#39;label of the image is : {0} and shape of the image is : {1}&#39;</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">.</span>format<span class="ansi-blue-fg">(</span>label<span class="ansi-blue-fg">,</span>shape<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
-
-<span class="ansi-red-fg">TypeError</span>: tuple indices must be integers or slices, not str</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Image 0 has shape (500, 667, 3) and label 72
+Image 1 has shape (500, 666, 3) and label 84
+Image 2 has shape (670, 500, 3) and label 70
+</pre>
 </div>
 </div>
 
